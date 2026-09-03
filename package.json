@@ -1,0 +1,13 @@
+{
+  "name": "korako-yolawani-public",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "evidence": "node public-evidence/v0.2/verify.mjs",
+    "test": "npm run evidence"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
