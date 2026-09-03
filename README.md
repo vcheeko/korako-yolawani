@@ -1,4 +1,4 @@
-﻿# KORAKO YOLAWANI
+# KORAKO YOLAWANI
 
 > **A human-directed operating layer for reliable AI-assisted work.**
 
@@ -27,9 +27,9 @@ GOAL
 ```
 
 ## Naming
-- **KORAKO YOLAWANI** Ă˘â‚¬â€ť public product and brand.
-- **KORA** Ă˘â‚¬â€ť private/internal orchestration core used by the product.
-- **Mira** Ă˘â‚¬â€ť conversational interface/persona.
+- **KORAKO YOLAWANI** â€” public product and brand.
+- **KORA** â€” private/internal orchestration core used by the product.
+- **Mira** â€” conversational interface/persona.
 
 KORA is not the public product name.
 
@@ -69,10 +69,10 @@ The included verifier exercises synthetic positive and adversarial vectors aroun
 
 ## Reviewer path
 
-1. [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) Ă˘â‚¬â€ť control-loop architecture and the public Golden target.
-2. [`docs/EVIDENCE.md`](docs/EVIDENCE.md) Ă˘â‚¬â€ť what is reproducible now and what is not.
-3. [`public-evidence/v0.2/`](public-evidence/v0.2/) Ă˘â‚¬â€ť inspectable verifier and test vectors.
-4. [`docs/EXTERNAL_REVIEW.md`](docs/EXTERNAL_REVIEW.md) Ă˘â‚¬â€ť falsifiable independent-review packet.
+1. [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) â€” control-loop architecture and the public Golden target.
+2. [`docs/EVIDENCE.md`](docs/EVIDENCE.md) â€” what is reproducible now and what is not.
+3. [`public-evidence/v0.2/`](public-evidence/v0.2/) â€” inspectable verifier and test vectors.
+4. [`docs/EXTERNAL_REVIEW.md`](docs/EXTERNAL_REVIEW.md) â€” falsifiable independent-review packet.
 
 ## Current credibility milestones
 
