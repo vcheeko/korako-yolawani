@@ -1,0 +1,275 @@
+{
+  "schema": "KORA-PUBLIC-GOLDEN-VECTORS-0.2",
+  "note": "Synthetic public examples only; not exported private KORA evidence.",
+  "expected_evidence_ids": [
+    "artifact_hash",
+    "changed_files"
+  ],
+  "expected_provenance": {
+    "artifact_hash": "worker:public-example-read-only",
+    "changed_files": "worker:public-example-read-only"
+  },
+  "expected_changed_files_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "expected_verifier_id": "kora:public-example-verifier-v0.2",
+  "vectors": [
+    {
+      "name": "valid_completed",
+      "expected": "PASS",
+      "expected_reason": "VERIFIED_PUBLIC_VECTOR",
+      "state": "COMPLETED",
+      "failure_code": null,
+      "evidence": [
+        {
+          "evidence_id": "artifact_hash",
+          "content_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "provenance": "worker:public-example-read-only"
+        },
+        {
+          "evidence_id": "changed_files",
+          "content_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "provenance": "worker:public-example-read-only"
+        }
+      ],
+      "verifier": {
+        "verdict": "PASS",
+        "evidence_set_hash": "7216334871c90e56f3a4c40398f5c55b2f977bd463a956271585345e2291eed9",
+        "verifier_id": "kora:public-example-verifier-v0.2"
+      }
+    },
+    {
+      "name": "forged_verifier_hash",
+      "expected": "FAIL",
+      "expected_reason": "VERIFIER_BINDING_MISMATCH",
+      "state": "COMPLETED",
+      "failure_code": null,
+      "evidence": [
+        {
+          "evidence_id": "artifact_hash",
+          "content_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "provenance": "worker:public-example-read-only"
+        },
+        {
+          "evidence_id": "changed_files",
+          "content_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "provenance": "worker:public-example-read-only"
+        }
+      ],
+      "verifier": {
+        "verdict": "PASS",
+        "evidence_set_hash": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+        "verifier_id": "kora:public-example-verifier-v0.2"
+      }
+    },
+    {
+      "name": "missing_expected_evidence",
+      "expected": "FAIL",
+      "expected_reason": "EVIDENCE_SET_MISMATCH",
+      "state": "COMPLETED",
+      "failure_code": null,
+      "evidence": [
+        {
+          "evidence_id": "artifact_hash",
+          "content_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "provenance": "worker:public-example-read-only"
+        }
+      ],
+      "verifier": {
+        "verdict": "PASS",
+        "evidence_set_hash": "7216334871c90e56f3a4c40398f5c55b2f977bd463a956271585345e2291eed9",
+        "verifier_id": "kora:public-example-verifier-v0.2"
+      }
+    },
+    {
+      "name": "forged_provenance_with_matching_verifier_hash",
+      "expected": "FAIL",
+      "expected_reason": "EVIDENCE_PROVENANCE_MISMATCH",
+      "state": "COMPLETED",
+      "failure_code": null,
+      "evidence": [
+        {
+          "evidence_id": "artifact_hash",
+          "content_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "provenance": "agent:forged"
+        },
+        {
+          "evidence_id": "changed_files",
+          "content_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "provenance": "worker:public-example-read-only"
+        }
+      ],
+      "verifier": {
+        "verdict": "PASS",
+        "evidence_set_hash": "69556333308ce34c29b414d1b768fcce012dcdb3e9fae85b58da31ab46a32de4",
+        "verifier_id": "kora:public-example-verifier-v0.2"
+      }
+    },
+    {
+      "name": "nonempty_changed_files_with_matching_verifier_hash",
+      "expected": "FAIL",
+      "expected_reason": "CHANGED_FILES_NOT_EMPTY",
+      "state": "COMPLETED",
+      "failure_code": null,
+      "evidence": [
+        {
+          "evidence_id": "artifact_hash",
+          "content_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "provenance": "worker:public-example-read-only"
+        },
+        {
+          "evidence_id": "changed_files",
+          "content_hash": "09efdb44780955ffa432996b042f030a8a35f34c3c747e252be9ceb4d8fc4276",
+          "provenance": "worker:public-example-read-only"
+        }
+      ],
+      "verifier": {
+        "verdict": "PASS",
+        "evidence_set_hash": "551ad79f9e74f1c777793bdc2927e438d188c4b13a3e61512b28cb96c2c8d632",
+        "verifier_id": "kora:public-example-verifier-v0.2"
+      }
+    },
+    {
+      "name": "wrong_verifier_id",
+      "expected": "FAIL",
+      "expected_reason": "VERIFIER_ID_MISMATCH",
+      "state": "COMPLETED",
+      "failure_code": null,
+      "evidence": [
+        {
+          "evidence_id": "artifact_hash",
+          "content_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "provenance": "worker:public-example-read-only"
+        },
+        {
+          "evidence_id": "changed_files",
+          "content_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "provenance": "worker:public-example-read-only"
+        }
+      ],
+      "verifier": {
+        "verdict": "PASS",
+        "evidence_set_hash": "7216334871c90e56f3a4c40398f5c55b2f977bd463a956271585345e2291eed9",
+        "verifier_id": "attacker:forged-verifier"
+      }
+    },
+    {
+      "name": "duplicate_evidence_id",
+      "expected": "FAIL",
+      "expected_reason": "EVIDENCE_DUPLICATE",
+      "state": "COMPLETED",
+      "failure_code": null,
+      "evidence": [
+        {
+          "evidence_id": "artifact_hash",
+          "content_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "provenance": "worker:public-example-read-only"
+        },
+        {
+          "evidence_id": "artifact_hash",
+          "content_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "provenance": "worker:public-example-read-only"
+        }
+      ],
+      "verifier": {
+        "verdict": "PASS",
+        "evidence_set_hash": "7216334871c90e56f3a4c40398f5c55b2f977bd463a956271585345e2291eed9",
+        "verifier_id": "kora:public-example-verifier-v0.2"
+      }
+    },
+    {
+      "name": "malformed_content_hash",
+      "expected": "FAIL",
+      "expected_reason": "EVIDENCE_HASH_INVALID",
+      "state": "COMPLETED",
+      "failure_code": null,
+      "evidence": [
+        {
+          "evidence_id": "artifact_hash",
+          "content_hash": "deadbeef",
+          "provenance": "worker:public-example-read-only"
+        },
+        {
+          "evidence_id": "changed_files",
+          "content_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "provenance": "worker:public-example-read-only"
+        }
+      ],
+      "verifier": {
+        "verdict": "PASS",
+        "evidence_set_hash": "7216334871c90e56f3a4c40398f5c55b2f977bd463a956271585345e2291eed9",
+        "verifier_id": "kora:public-example-verifier-v0.2"
+      }
+    },
+    {
+      "name": "terminal_failure_code_present",
+      "expected": "FAIL",
+      "expected_reason": "TERMINAL_FAILURE_PRESENT",
+      "state": "COMPLETED",
+      "failure_code": "WORKER_FAILED",
+      "evidence": [
+        {
+          "evidence_id": "artifact_hash",
+          "content_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "provenance": "worker:public-example-read-only"
+        },
+        {
+          "evidence_id": "changed_files",
+          "content_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "provenance": "worker:public-example-read-only"
+        }
+      ],
+      "verifier": {
+        "verdict": "PASS",
+        "evidence_set_hash": "7216334871c90e56f3a4c40398f5c55b2f977bd463a956271585345e2291eed9",
+        "verifier_id": "kora:public-example-verifier-v0.2"
+      }
+    },
+    {
+      "name": "verified_but_not_completed",
+      "expected": "FAIL",
+      "expected_reason": "STATE_NOT_COMPLETED",
+      "state": "VERIFIED",
+      "failure_code": null,
+      "evidence": [
+        {
+          "evidence_id": "artifact_hash",
+          "content_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "provenance": "worker:public-example-read-only"
+        },
+        {
+          "evidence_id": "changed_files",
+          "content_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "provenance": "worker:public-example-read-only"
+        }
+      ],
+      "verifier": {
+        "verdict": "PASS",
+        "evidence_set_hash": "7216334871c90e56f3a4c40398f5c55b2f977bd463a956271585345e2291eed9",
+        "verifier_id": "kora:public-example-verifier-v0.2"
+      }
+    },
+    {
+      "name": "verifier_fail_verdict",
+      "expected": "FAIL",
+      "expected_reason": "VERIFIER_PASS_REQUIRED",
+      "state": "COMPLETED",
+      "failure_code": null,
+      "evidence": [
+        {
+          "evidence_id": "artifact_hash",
+          "content_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "provenance": "worker:public-example-read-only"
+        },
+        {
+          "evidence_id": "changed_files",
+          "content_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "provenance": "worker:public-example-read-only"
+        }
+      ],
+      "verifier": {
+        "verdict": "FAIL",
+        "evidence_set_hash": "7216334871c90e56f3a4c40398f5c55b2f977bd463a956271585345e2291eed9",
+        "verifier_id": "kora:public-example-verifier-v0.2"
+      }
+    }
+  ]
+}
