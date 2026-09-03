@@ -1,4 +1,4 @@
-# Korako Yolawani — Public Evidence Index
+# Korako Yolawani - Public Evidence Index
 
 This repository is the public flagship surface for Korako Yolawani.
 

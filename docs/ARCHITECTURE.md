@@ -1,4 +1,4 @@
-# Korako Yolawani — Public Architecture
+# Korako Yolawani - Public Architecture
 
 Korako Yolawani is a public product built around a private orchestration core called **KORA**.
 
@@ -51,12 +51,12 @@ Recommended task: inspect an allowlisted local fixture directory, calculate a ma
 
 ## Required scenarios
 
-- **PASS-01** — valid bounded read-only execution -> `COMPLETED`, verifier `PASS`.
-- **FAIL-01** — scope escape attempt -> blocked before worker execution.
-- **FAIL-02** — mutation request -> blocked by authority policy.
-- **FAIL-03** — missing evidence -> verifier `FAIL`; no promotion to `COMPLETED`.
-- **FAIL-04** — forged verifier/evidence binding -> verifier `FAIL`.
-- **RECOVERY-01** — interrupted state -> reconstruct next safe action without silently replaying work.
+- **PASS-01** - valid bounded read-only execution -> `COMPLETED`, verifier `PASS`.
+- **FAIL-01** - scope escape attempt -> blocked before worker execution.
+- **FAIL-02** - mutation request -> blocked by authority policy.
+- **FAIL-03** - missing evidence -> verifier `FAIL`; no promotion to `COMPLETED`.
+- **FAIL-04** - forged verifier/evidence binding -> verifier `FAIL`.
+- **RECOVERY-01** - interrupted state -> reconstruct next safe action without silently replaying work.
 
 ## Explicit non-goals for the first public runtime
 

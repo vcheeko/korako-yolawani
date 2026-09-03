@@ -1,4 +1,4 @@
-# Korako Yolawani — External Technical Review Packet
+# Korako Yolawani - External Technical Review Packet
 
 **Purpose:** give an independent reviewer a compact, falsifiable surface for reviewing Korako Yolawani without exposing private implementation or credentials.
 

@@ -27,9 +27,9 @@ GOAL
 ```
 
 ## Naming
-- **KORAKO YOLAWANI** â€” public product and brand.
-- **KORA** â€” private/internal orchestration core used by the product.
-- **Mira** â€” conversational interface/persona.
+- **KORAKO YOLAWANI** - public product and brand.
+- **KORA** - private/internal orchestration core used by the product.
+- **Mira** - conversational interface/persona.
 
 KORA is not the public product name.
 
@@ -69,10 +69,10 @@ The included verifier exercises synthetic positive and adversarial vectors aroun
 
 ## Reviewer path
 
-1. [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) â€” control-loop architecture and the public Golden target.
-2. [`docs/EVIDENCE.md`](docs/EVIDENCE.md) â€” what is reproducible now and what is not.
-3. [`public-evidence/v0.2/`](public-evidence/v0.2/) â€” inspectable verifier and test vectors.
-4. [`docs/EXTERNAL_REVIEW.md`](docs/EXTERNAL_REVIEW.md) â€” falsifiable independent-review packet.
+1. [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) - control-loop architecture and the public Golden target.
+2. [`docs/EVIDENCE.md`](docs/EVIDENCE.md) - what is reproducible now and what is not.
+3. [`public-evidence/v0.2/`](public-evidence/v0.2/) - inspectable verifier and test vectors.
+4. [`docs/EXTERNAL_REVIEW.md`](docs/EXTERNAL_REVIEW.md) - falsifiable independent-review packet.
 
 ## Current credibility milestones
 
