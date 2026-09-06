@@ -4,16 +4,16 @@
 
 [![Public evidence](https://github.com/vcheeko/korako-yolawani/actions/workflows/public-evidence.yml/badge.svg)](https://github.com/vcheeko/korako-yolawani/actions/workflows/public-evidence.yml)
 
-**Stage:** prototype / evidence-building  
+**Stage:** active prototype / personal daily-use validation  
 **Production-ready:** no  
 **Canonical implementation:** private  
-**Public purpose:** focused diligence surface for the product thesis, architecture, reproducible evidence contracts and explicit limitations
+**Public purpose:** focused diligence surface for the product thesis, architecture, reproducible evidence contracts, reviewability and explicit limitations
 
 ## 30-second overview
 
-Korako Yolawani is designed for work that becomes difficult when it spans multiple AI models, tools, sessions and human decisions.
+Korako Yolawani is designed for work that becomes difficult when it spans multiple AI models, tools, devices, sessions and human decisions.
 
-The goal is **not autonomy at any cost**. The goal is reliable continuation while the human retains meaningful authority.
+The goal is not autonomy at any cost. The goal is **reliable continuation while the human retains meaningful authority**.
 
 ```text
 GOAL
@@ -26,7 +26,24 @@ GOAL
   -> RECOVERY WHEN NEEDED
 ```
 
-### Naming
+Korako is also designed to reduce **human-postman work**: manually carrying context, instructions, files and status between otherwise capable systems.
+
+## Development snapshot · 2026-09-06
+
+The canonical implementation remains private, but current verified development work includes:
+
+- **Personal Alpha** integrated in the private core;
+- a **Hybrid Mira Orb** with a **local/free-first voice path** integrated;
+- natural continuous voice interaction still under active refinement;
+- a **desktop/PWA daily-use path** in active validation;
+- a **Personal Symphony control room** for human-visible orchestration state;
+- enforced **Human Gate**, evidence and verifier boundaries for consequential work;
+- internal **Golden Daily Use** activation with live **No-Postman** evidence collection;
+- a public, reproducible evidence-contract harness with passing CI.
+
+These are development milestones, not a claim of production readiness or complete end-to-end public reproduction.
+
+## Naming
 
 - **KORAKO YOLAWANI** — public product and brand.
 - **KORA** — private/internal orchestration core used by the product.
@@ -50,6 +67,7 @@ Korako explores an operating model where those coordination duties become explic
 - **Verification before trust** for important completion claims.
 - **Recovery and reversibility** as product requirements.
 - **Safe parallelism** for independent bounded work.
+- **Free/local-first routing** where practical, with paid escalation only when materially needed.
 - **Less human-postman work** between systems.
 
 ## What is public today
@@ -61,7 +79,8 @@ This repository currently provides:
 - a reproducible public evidence-contract harness;
 - synthetic positive and adversarial verification vectors;
 - explicit public/private boundaries and limitations;
-- an external-review packet designed to make claims falsifiable.
+- an external-review packet designed to make claims falsifiable;
+- a security disclosure policy for the public surface.
 
 It does **not** claim that the private KORA runtime is production-ready or publicly reproduced end to end.
 
@@ -94,7 +113,8 @@ For a fast technical review, follow this order:
 2. [`docs/EVIDENCE.md`](docs/EVIDENCE.md) — what is reproducible now and what is not.
 3. [`public-evidence/v0.2/`](public-evidence/v0.2/) — inspectable verifier and test vectors.
 4. [`docs/EXTERNAL_REVIEW.md`](docs/EXTERNAL_REVIEW.md) — falsifiable independent-review packet.
-5. [`CONTRIBUTING.md`](CONTRIBUTING.md) — how to contribute to the public surface.
+5. [`SECURITY.md`](SECURITY.md) — responsible vulnerability reporting and public/private security boundary.
+6. [`CONTRIBUTING.md`](CONTRIBUTING.md) — how to contribute to the public surface.
 
 ## Current credibility milestones
 
@@ -102,6 +122,7 @@ For a fast technical review, follow this order:
 - [x] public product / private-core boundary documented;
 - [x] reproducible synthetic evidence-contract harness included;
 - [x] clean-clone CI result verified for this repository;
+- [x] responsible security disclosure policy added;
 - [ ] minimal public Golden runtime connecting plan -> authority -> execution -> evidence -> verification -> persistence;
 - [ ] recovery scenario reproduced in that runtime;
 - [ ] independent third-party reproduction/review returned;
@@ -111,7 +132,9 @@ For a fast technical review, follow this order:
 
 **Public by design:** product problem, operating principles, high-level architecture, sanitized evidence contracts, limitations, review protocol and future reproducibility targets.
 
-**Private by design:** canonical KORA implementation, credentials, machine configuration, security-sensitive boundaries and unpublished operational evidence.
+**Private by design:** canonical KORA implementation, credentials, machine configuration, security-sensitive boundaries, operational logs, unpublished pilot data and unpublished IP-sensitive material.
+
+Do not open a public issue with sensitive vulnerability details. See [`SECURITY.md`](SECURITY.md).
 
 ## Collaboration
 
