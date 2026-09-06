@@ -7,7 +7,7 @@
 **Stage:** active prototype / personal daily-use validation  
 **Production-ready:** no  
 **Canonical implementation:** private  
-**Public purpose:** focused diligence surface for the product thesis, architecture, reproducible evidence contracts, reviewability and explicit limitations
+**Public purpose:** focused diligence surface for the product thesis, reproducible control-loop proofs, explicit limitations and independent review
 
 ## 30-second overview
 
@@ -28,9 +28,32 @@ GOAL
 
 Korako is also designed to reduce **human-postman work**: manually carrying context, instructions, files and status between otherwise capable systems.
 
-## Development snapshot · 2026-09-06
+## Public proof now
 
-The canonical implementation remains private, but current verified development work includes:
+The repository now contains a minimal dependency-free **Public Golden v0.1** runtime that can be rerun by an external reviewer.
+
+It reproduces:
+
+`plan → authority → bounded execution → evidence → independent verification → persisted terminal state`
+
+It also includes:
+
+- a fail-closed Human Gate check;
+- an independent verifier identity;
+- a recovery test that interrupts before execution and resumes from an authorized checkpoint;
+- No-Postman instrumentation that reports observed manual system-to-system transfers without inventing a time-saved baseline.
+
+Run the complete public proof stack:
+
+```bash
+npm test
+```
+
+A fresh GitHub-hosted run on commit `e56f90089674471443dd09c0ecceb11fb6d66712` completed **SUCCESS**. See [`public-evidence/runs/2026-09-06-public-golden-v0.1.md`](public-evidence/runs/2026-09-06-public-golden-v0.1.md).
+
+## Development snapshot · 2026-09-07
+
+Current development includes:
 
 - **Personal Alpha** integrated in the private core;
 - a **Hybrid Mira Orb** with a **local/free-first voice path** integrated;
@@ -39,9 +62,9 @@ The canonical implementation remains private, but current verified development w
 - a **Personal Symphony control room** for human-visible orchestration state;
 - enforced **Human Gate**, evidence and verifier boundaries for consequential work;
 - internal **Golden Daily Use** activation with live **No-Postman** evidence collection;
-- a public, reproducible evidence-contract harness with passing CI.
+- the first publicly reproducible Golden control-loop slice with passing clean-run CI.
 
-These are development milestones, not a claim of production readiness or complete end-to-end public reproduction.
+These are development milestones, not a claim of production readiness or complete public reproduction of the private runtime.
 
 **Evidence ledger:** [`docs/DEVELOPMENT_EVIDENCE.md`](docs/DEVELOPMENT_EVIDENCE.md) separates **PUBLICLY REPRODUCIBLE**, **INTERNALLY VERIFIED**, **IN VALIDATION** and **NOT YET PROVEN** claims.
 
@@ -78,6 +101,9 @@ This repository currently provides:
 - a high-level control-loop architecture;
 - a reproducible public evidence-contract harness;
 - synthetic positive and adversarial verification vectors;
+- **Public Golden v0.1**, a runnable bounded control-loop slice;
+- a public recovery/failure reproduction;
+- No-Postman instrumentation with an explicit no-fake-baseline rule;
 - a development evidence ledger separating public proof from private development claims;
 - explicit public/private boundaries and limitations;
 - an external-review packet designed to make claims falsifiable;
@@ -93,47 +119,54 @@ Korako deliberately distinguishes:
 PREPARED != EXECUTED != VERIFIED != PUBLICLY REPRODUCED
 ```
 
-### Reproduce the current public evidence contract
+### Reproduce everything public
 
 Requires Node.js 20+.
 
 ```bash
-npm install
-npm run evidence
+npm test
 ```
 
-The included verifier exercises synthetic positive and adversarial vectors around terminal state, expected evidence, provenance, read-only evidence, verifier identity and evidence-set binding.
+Or run individual layers:
 
-**Important:** this is a reproducible **public evidence-contract harness**, not yet the full public Golden runtime.
+```bash
+npm run evidence
+npm run golden
+npm run golden:recovery
+npm run golden:benchmark
+```
 
 ## Reviewer path
 
 For a fast technical review, follow this order:
 
-1. [`docs/DEVELOPMENT_EVIDENCE.md`](docs/DEVELOPMENT_EVIDENCE.md) — what is proven publicly, verified internally, still in validation and not yet proven.
-2. [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — control-loop architecture and the public Golden target.
-3. [`docs/EVIDENCE.md`](docs/EVIDENCE.md) — what is reproducible now and what is not.
-4. [`public-evidence/v0.2/`](public-evidence/v0.2/) — inspectable verifier and test vectors.
-5. [`docs/EXTERNAL_REVIEW.md`](docs/EXTERNAL_REVIEW.md) — falsifiable independent-review packet.
-6. [`SECURITY.md`](SECURITY.md) — responsible vulnerability reporting and public/private security boundary.
-7. [`CONTRIBUTING.md`](CONTRIBUTING.md) — how to contribute to the public surface.
+1. [`docs/DEVELOPMENT_EVIDENCE.md`](docs/DEVELOPMENT_EVIDENCE.md) — current truth table.
+2. [`public-golden/v0.1/`](public-golden/v0.1/) — runnable Golden control-loop slice.
+3. [`public-evidence/runs/2026-09-06-public-golden-v0.1.md`](public-evidence/runs/2026-09-06-public-golden-v0.1.md) — recorded clean-run result.
+4. [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — control-loop architecture.
+5. [`docs/EVIDENCE.md`](docs/EVIDENCE.md) — evidence boundaries.
+6. [`public-evidence/v0.2/`](public-evidence/v0.2/) — verifier and adversarial vectors.
+7. [`docs/EXTERNAL_REVIEW.md`](docs/EXTERNAL_REVIEW.md) — falsifiable independent-review packet.
+8. [`SECURITY.md`](SECURITY.md) — responsible vulnerability reporting.
 
 ## Current credibility milestones
 
 - [x] focused public flagship repository created;
 - [x] public product / private-core boundary documented;
 - [x] reproducible synthetic evidence-contract harness included;
-- [x] clean-clone CI result verified for this repository;
+- [x] clean-clone CI verified;
 - [x] development evidence ledger added;
+- [x] minimal public Golden runtime reproduced;
+- [x] recovery scenario reproduced in the public runtime;
 - [x] responsible security disclosure policy added;
-- [ ] minimal public Golden runtime connecting plan -> authority -> execution -> evidence -> verification -> persistence;
-- [ ] recovery scenario reproduced in that runtime;
+- [ ] measured manual-vs-Korako No-Postman baseline with defensible time-saved data;
+- [ ] real user-facing Mira/Korako demo from goal to useful verified result;
 - [ ] independent third-party reproduction/review returned;
 - [ ] pilot evidence showing reduced manual coordination without weakening human control.
 
 ## Public / private boundary
 
-**Public by design:** product problem, operating principles, high-level architecture, sanitized evidence contracts, limitations, review protocol and future reproducibility targets.
+**Public by design:** product problem, operating principles, high-level architecture, sanitized proof slices, evidence contracts, limitations and review protocol.
 
 **Private by design:** canonical implementation, credentials, machine configuration, security-sensitive boundaries, operational logs, unpublished pilot data and unpublished IP-sensitive material.
 
