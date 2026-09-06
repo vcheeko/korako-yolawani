@@ -1,6 +1,6 @@
 # Korako Yolawani — Development Evidence Ledger
 
-**Status date:** 2026-09-06  
+**Status date:** 2026-09-07  
 **Stage:** active prototype / personal daily-use validation
 
 This ledger separates what can be reproduced publicly from what has been verified only inside the private development core.
@@ -16,26 +16,42 @@ This ledger separates what can be reproduced publicly from what has been verifie
 
 ### Public evidence-contract harness — PUBLICLY REPRODUCIBLE
 
-The repository contains a dependency-free verifier and synthetic positive/adversarial vectors under [`public-evidence/v0.2/`](../public-evidence/v0.2/).
-
-Run:
+The dependency-free verifier and synthetic positive/adversarial vectors under [`public-evidence/v0.2/`](../public-evidence/v0.2/) can be rerun with:
 
 ```bash
-npm install
 npm run evidence
 ```
 
-The harness checks selected evidence semantics including terminal completion state, expected evidence membership, duplicate rejection, SHA-256 shape, provenance, read-only changed-file evidence, verifier identity, PASS verdict and evidence-set binding.
+The harness checks terminal completion state, expected evidence membership, duplicate rejection, SHA-256 shape, provenance, read-only changed-file evidence, verifier identity, PASS verdict and evidence-set binding.
 
-### GitHub-hosted execution — PUBLICLY REPRODUCIBLE
+### Public Golden v0.1 — PUBLICLY REPRODUCIBLE
 
-The same public evidence workflow runs in GitHub Actions. The current documented development snapshot was followed by a completed **successful** `public-evidence` workflow run on `main`.
+[`public-golden/v0.1/`](../public-golden/v0.1/) is the first minimal runnable Korako control-loop slice:
 
-[Inspect the public evidence workflow](https://github.com/vcheeko/korako-yolawani/actions/workflows/public-evidence.yml)
+`plan → authority → bounded execution → evidence → independent verification → persisted terminal state`
+
+It also contains a fail-closed recovery scenario and No-Postman instrumentation.
+
+Run the complete public proof stack with:
+
+```bash
+npm test
+```
+
+A fresh GitHub-hosted run on commit `e56f90089674471443dd09c0ecceb11fb6d66712` completed successfully. The Golden slice reached `VERIFIED`, rejected execution without approval, verified with a distinct verifier identity, reproduced recovery after an interruption, and observed zero human-postman transfers inside the bounded automated slice.
+
+See the immutable development record: [`public-evidence/runs/2026-09-06-public-golden-v0.1.md`](../public-evidence/runs/2026-09-06-public-golden-v0.1.md).
+
+### No-Postman measurement boundary — PARTIALLY PUBLICLY REPRODUCIBLE
+
+The public benchmark instruments the automated side of the slice and reports human decisions, system transitions and observed human-postman transfers. It deliberately reports:
+
+- `manual_baseline_measured: false`
+- `time_saved_claimed: false`
+
+So the repo now proves the instrumentation works, but **does not yet prove quantified time saved versus manual work**.
 
 ## Verified inside private development
-
-The following milestones have corresponding development history/evidence in the private canonical core, but are deliberately **not claimed as publicly reproduced end to end**:
 
 | Milestone | Evidence class | Current truth |
 | --- | --- | --- |
@@ -49,15 +65,16 @@ The following milestones have corresponding development history/evidence in the 
 
 ## What this does not prove
 
-None of the evidence above proves that Korako Yolawani is production-ready, secure against all threats, independently validated, commercially validated, or that the private runtime is publicly reproducible end to end.
+The current evidence does not prove production readiness, security against all threats, independent third-party acceptance, commercial validation, model intelligence, or that the private runtime is publicly reproducible end to end.
 
-It also does not yet prove a quantified reduction in human coordination time. That requires measured baseline-vs-Korako trials rather than estimates.
+It also does not yet prove a quantified reduction in human coordination time. That requires a measured baseline-vs-Korako trial rather than estimates.
 
 ## Next evidence milestones
 
-- [ ] minimal public Golden runtime connecting plan → authority → bounded execution → evidence → verification → persistent continuation;
-- [ ] public recovery/failure scenario reproduced end to end;
+- [x] minimal public Golden runtime connecting plan → authority → bounded execution → evidence → verification → persistent continuation;
+- [x] public recovery/failure scenario reproduced end to end;
 - [ ] measured No-Postman baseline comparison with defensible time-saved data;
+- [ ] real user-facing Mira/Korako demo showing one useful task from goal to verified result;
 - [ ] independent third-party reproduction/review;
 - [ ] pilot evidence from a real workflow/user;
 - [ ] production-readiness/security claims only after evidence supports them.
