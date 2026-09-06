@@ -40,7 +40,7 @@ npm test
 
 A fresh GitHub-hosted run on commit `e56f90089674471443dd09c0ecceb11fb6d66712` completed successfully. The Golden slice reached `VERIFIED`, rejected execution without approval, verified with a distinct verifier identity, reproduced recovery after an interruption, and observed zero human-postman transfers inside the bounded automated slice.
 
-See the immutable development record: [`public-evidence/runs/2026-09-06-public-golden-v0.1.md`](../public-evidence/runs/2026-09-06-public-golden-v0.1.md).
+See the development record: [`public-evidence/runs/2026-09-06-public-golden-v0.1.md`](../public-evidence/runs/2026-09-06-public-golden-v0.1.md).
 
 ### No-Postman measurement boundary — PARTIALLY PUBLICLY REPRODUCIBLE
 
@@ -49,7 +49,7 @@ The public benchmark instruments the automated side of the slice and reports hum
 - `manual_baseline_measured: false`
 - `time_saved_claimed: false`
 
-So the repo now proves the instrumentation works, but **does not yet prove quantified time saved versus manual work**.
+So the repo proves the instrumentation works, but **does not yet prove quantified time saved versus manual work**.
 
 ## Verified inside private development
 
@@ -62,6 +62,9 @@ So the repo now proves the instrumentation works, but **does not yet prove quant
 | Personal Symphony control room | INTERNALLY VERIFIED / IN VALIDATION | Human-visible orchestration state integrated for daily-use validation |
 | Golden Daily Use | INTERNALLY VERIFIED / IN VALIDATION | Activated for personal daily-use validation |
 | Live No-Postman evidence collection | INTERNALLY VERIFIED / IN VALIDATION | Evidence collection activated; a defensible time-saved metric is not yet established |
+| Local real-use smoke · 2026-09-07 | INTERNALLY VERIFIED | Local date, free-web and local-chat paths returned successfully; read-only work remained analysis-only and the execution-facing surface remained explicit-confirmation-only |
+
+A sanitized internal evidence record for the real-use smoke was written to the private development evidence store. This row is **not** presented as independently publicly reproducible.
 
 ## What this does not prove
 
@@ -73,6 +76,7 @@ It also does not yet prove a quantified reduction in human coordination time. Th
 
 - [x] minimal public Golden runtime connecting plan → authority → bounded execution → evidence → verification → persistent continuation;
 - [x] public recovery/failure scenario reproduced end to end;
+- [x] internally verified local real-use smoke across local, free-web and guarded work surfaces;
 - [ ] measured No-Postman baseline comparison with defensible time-saved data;
 - [ ] real user-facing Mira/Korako demo showing one useful task from goal to verified result;
 - [ ] independent third-party reproduction/review;
@@ -82,7 +86,7 @@ It also does not yet prove a quantified reduction in human coordination time. Th
 ## Evidence rule
 
 ```text
-PREPARED != EXECUTED != VERIFIED != PUBLICLY REPRODUCED
+PREPARED != EXECUTED != VERIFIED != PUBLICLY REPRODUCIBLE
 ```
 
 The purpose of this ledger is not to make Korako look more finished than it is. It is to make progress inspectable and claims falsifiable.
