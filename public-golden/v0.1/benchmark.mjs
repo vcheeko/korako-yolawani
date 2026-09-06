@@ -1,0 +1,8 @@
+import { mkdtemp, writeFile } from 'node:fs/promises'; import os from 'node:os'; import path from 'node:path'; import { performance } from 'node:perf_hooks';
+import { APPROVAL_TOKEN, authorizeRun, createRun, executeRun, verifyRun, assertTerminalVerified } from './runtime.mjs';
+const workspace = await mkdtemp(path.join(os.tmpdir(), 'korako-public-benchmark-')); const inputPath = path.join(workspace, 'input.txt'); const artifactPath = path.join(workspace, 'artifact.md');
+await writeFile(inputPath, 'One goal.\nOne bounded authorization.\nNo manual system-to-system transfer in this slice.\n', 'utf8');
+const started = performance.now(); const { statePath } = await createRun({ workspace, goal: 'Measure the automated side of the public Golden slice', inputPath, artifactPath });
+await authorizeRun(statePath, APPROVAL_TOKEN); await executeRun(statePath); await verifyRun(statePath); const finalState = await assertTerminalVerified(statePath); const durationMs = Math.round((performance.now() - started) * 100) / 100;
+const report = { proof: 'NO_POSTMAN_INSTRUMENTATION_V0_1', automated_slice_duration_ms: durationMs, human_decisions: finalState.metrics.human_decisions, human_postman_transfers_observed_in_slice: finalState.metrics.human_postman_transfers, system_stage_transitions: finalState.metrics.system_stage_transitions, manual_baseline_measured: false, time_saved_claimed: false, next_required_measurement: 'Run the same goal manually and record elapsed time, copy/paste transfers, tool switches and clicks.' };
+if (report.human_postman_transfers_observed_in_slice !== 0) throw new Error('UNEXPECTED_HUMAN_POSTMAN_TRANSFER'); console.log(JSON.stringify(report, null, 2));
