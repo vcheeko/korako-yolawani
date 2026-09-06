@@ -43,13 +43,13 @@ The canonical implementation remains private, but current verified development w
 
 These are development milestones, not a claim of production readiness or complete end-to-end public reproduction.
 
+**Evidence ledger:** [`docs/DEVELOPMENT_EVIDENCE.md`](docs/DEVELOPMENT_EVIDENCE.md) separates **PUBLICLY REPRODUCIBLE**, **INTERNALLY VERIFIED**, **IN VALIDATION** and **NOT YET PROVEN** claims.
+
 ## Naming
 
 - **KORAKO YOLAWANI** — public product and brand.
-- **KORA** — private/internal orchestration core used by the product.
 - **Mira** — conversational interface/persona.
-
-KORA is not the public product name.
+- The canonical orchestration implementation remains private.
 
 ## The problem
 
@@ -78,11 +78,12 @@ This repository currently provides:
 - a high-level control-loop architecture;
 - a reproducible public evidence-contract harness;
 - synthetic positive and adversarial verification vectors;
+- a development evidence ledger separating public proof from private development claims;
 - explicit public/private boundaries and limitations;
 - an external-review packet designed to make claims falsifiable;
 - a security disclosure policy for the public surface.
 
-It does **not** claim that the private KORA runtime is production-ready or publicly reproduced end to end.
+It does **not** claim that the private canonical runtime is production-ready or publicly reproduced end to end.
 
 ## Evidence discipline
 
@@ -109,12 +110,13 @@ The included verifier exercises synthetic positive and adversarial vectors aroun
 
 For a fast technical review, follow this order:
 
-1. [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — control-loop architecture and the public Golden target.
-2. [`docs/EVIDENCE.md`](docs/EVIDENCE.md) — what is reproducible now and what is not.
-3. [`public-evidence/v0.2/`](public-evidence/v0.2/) — inspectable verifier and test vectors.
-4. [`docs/EXTERNAL_REVIEW.md`](docs/EXTERNAL_REVIEW.md) — falsifiable independent-review packet.
-5. [`SECURITY.md`](SECURITY.md) — responsible vulnerability reporting and public/private security boundary.
-6. [`CONTRIBUTING.md`](CONTRIBUTING.md) — how to contribute to the public surface.
+1. [`docs/DEVELOPMENT_EVIDENCE.md`](docs/DEVELOPMENT_EVIDENCE.md) — what is proven publicly, verified internally, still in validation and not yet proven.
+2. [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — control-loop architecture and the public Golden target.
+3. [`docs/EVIDENCE.md`](docs/EVIDENCE.md) — what is reproducible now and what is not.
+4. [`public-evidence/v0.2/`](public-evidence/v0.2/) — inspectable verifier and test vectors.
+5. [`docs/EXTERNAL_REVIEW.md`](docs/EXTERNAL_REVIEW.md) — falsifiable independent-review packet.
+6. [`SECURITY.md`](SECURITY.md) — responsible vulnerability reporting and public/private security boundary.
+7. [`CONTRIBUTING.md`](CONTRIBUTING.md) — how to contribute to the public surface.
 
 ## Current credibility milestones
 
@@ -122,6 +124,7 @@ For a fast technical review, follow this order:
 - [x] public product / private-core boundary documented;
 - [x] reproducible synthetic evidence-contract harness included;
 - [x] clean-clone CI result verified for this repository;
+- [x] development evidence ledger added;
 - [x] responsible security disclosure policy added;
 - [ ] minimal public Golden runtime connecting plan -> authority -> execution -> evidence -> verification -> persistence;
 - [ ] recovery scenario reproduced in that runtime;
@@ -132,7 +135,7 @@ For a fast technical review, follow this order:
 
 **Public by design:** product problem, operating principles, high-level architecture, sanitized evidence contracts, limitations, review protocol and future reproducibility targets.
 
-**Private by design:** canonical KORA implementation, credentials, machine configuration, security-sensitive boundaries, operational logs, unpublished pilot data and unpublished IP-sensitive material.
+**Private by design:** canonical implementation, credentials, machine configuration, security-sensitive boundaries, operational logs, unpublished pilot data and unpublished IP-sensitive material.
 
 Do not open a public issue with sensitive vulnerability details. See [`SECURITY.md`](SECURITY.md).
 
