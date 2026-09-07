@@ -28,6 +28,24 @@ GOAL
 
 Korako is also designed to reduce **human-postman work**: manually carrying context, instructions, files and status between otherwise capable systems.
 
+## Why the name — Korako Yolawani
+
+The name is part of the product idea, not just a label.
+
+**Korako** comes from the Slovenian idea of **korak / koraki — a step / steps**. The product is built around helping a person move through complex work one meaningful step at a time while preserving context, direction and control.
+
+**Yolawani** represents the wider **human journey around those steps** — the life, goals, decisions, projects and experiences that give each step meaning. It is used as the distinctive second part of the brand rather than as a literal translation from another language.
+
+There is also a philosophical parallel in Japanese:
+
+- **道 (*michi*)** — path / way;
+- **人生 (*jinsei*)** — human life / one's life;
+- **人生の道 (*jinsei no michi*)** — *the path of life* / *the way through life*.
+
+This Japanese expression is **inspiration and a conceptual parallel, not the linguistic origin or literal translation of Korako Yolawani**.
+
+> **A life is not one task. It is a journey made of steps. Korako helps the human move through those steps without losing the journey.**
+
 ## Public proof now
 
 The repository contains a minimal dependency-free **Public Golden v0.1** runtime that can be rerun by an external reviewer.
