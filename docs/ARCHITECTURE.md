@@ -11,6 +11,10 @@ Human goal
    |
 Persistent project state
    |
+Domain + jurisdiction context
+   |
+Knowledge / evidence preflight when needed
+   |
 Plan + dependencies
    |
 Authority / risk decision
@@ -28,7 +32,15 @@ safe / bounded        Human Gate
               Recovery if needed
 ```
 
-The key claim is not that every task needs a complex agent stack. The claim is that long-running AI-assisted work becomes more reliable when authority, state, evidence and recovery are explicit.
+The key claim is not that every task needs a complex agent stack. The claim is that long-running AI-assisted work becomes more reliable when authority, state, evidence, jurisdiction and recovery are explicit.
+
+## Knowledge preflight
+
+For tasks whose correctness depends on external knowledge, Korako uses a federated Human Knowledge Fabric rather than treating one model or one corpus as truth. Consequential claims should preserve provenance, evidence, counter-evidence, freshness and applicable jurisdiction before they influence action.
+
+Jurisdiction-sensitive domains such as law, medicine, healthcare regulation, insurance, tax, privacy and employment must use the user's applicable country and, where material, state/province/territory or other subnational layer. The initial launch-market focus is the United States, but U.S. rules must not be silently applied to users elsewhere.
+
+The Knowledge Fabric is documented in [`HUMAN_KNOWLEDGE_FABRIC.md`](./HUMAN_KNOWLEDGE_FABRIC.md).
 
 ## Public Golden target
 
@@ -68,6 +80,7 @@ The first public runtime should not require:
 - multi-provider model routing;
 - consequential autonomous actions;
 - production database deployment;
+- full Human Knowledge Fabric runtime integration;
 - disclosure of the full private KORA architecture.
 
 The purpose is one narrow reproducible claim, not a source dump.
