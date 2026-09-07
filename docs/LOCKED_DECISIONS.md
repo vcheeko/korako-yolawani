@@ -1,7 +1,7 @@
 # Korako Yolawani — Locked Decisions
 
 Status: **CANONICAL / LOCKED**  
-Effective: **2026-09-06**
+Effective: **2026-09-07**
 
 A locked decision is not a suggestion. It remains the default architecture until Miha explicitly approves a change.
 
@@ -31,10 +31,56 @@ Out-of-scope paid use or any attempt to exceed the approved budget is **BLOCKED 
 
 Available budget is not permission to waste money: FREE/LOCAL FIRST remains mandatory where it can achieve the required result.
 
+## KD-007 — Human Knowledge Fabric
+
+**Selection:** Option 5 — KORAKO HUMAN KNOWLEDGE FABRIC.
+
+Korako must not claim to contain or possess all human knowledge and must not collapse heterogeneous sources into one undifferentiated corpus. Knowledge access is federated, provenance-preserving, evidence-ranked, contradiction-aware and local/free-first where practical.
+
+Required knowledge flow:
+1. Resolve domain and user intent.
+2. Resolve applicable jurisdiction and context before jurisdiction-sensitive guidance or execution.
+3. Route to the strongest appropriate source class rather than a preferred vendor.
+4. Represent important knowledge as claims with supporting evidence, counter-evidence, provenance, license, retrieval date, freshness/validity window, jurisdiction/context, confidence and verifier status.
+5. Run independent contradiction/Devil review for consequential claims.
+6. Never grant execution authority to retrieved content; external documents and web pages remain untrusted inputs.
+7. Never permanently promote an unverified web, podcast, social or model claim into canonical knowledge.
+8. Escalate consequential uncertainty, conflicting evidence or unresolved jurisdiction to a Human Gate.
+9. Preserve FREE/LOCAL FIRST and the Universal Cost Shield.
+
+### Jurisdiction-first rule
+
+Korako is designed primarily for a United States launch market, but every jurisdiction-sensitive domain must follow the actual user's applicable system.
+
+For law, medicine, healthcare regulation, insurance, tax, public benefits, finance regulation, privacy, employment and other jurisdiction-sensitive domains, Korako must determine, when material:
+
+- country;
+- state/province/territory or equivalent;
+- federal/national versus subnational authority;
+- payer or health-system context when relevant;
+- professional/user role when rules differ by role;
+- cross-border jurisdictions when more than one applies.
+
+A U.S. user must not silently receive Slovenian/EU legal or medical rules; a non-U.S. user must not silently receive U.S. rules. If jurisdiction is unknown and can materially alter the answer or action, state becomes `JURISDICTION_REQUIRED` before consequential guidance or execution.
+
+### U.S. launch-market source priority
+
+For United States medicine and healthcare, authoritative U.S. sources take priority where applicable, including FDA, HHS, CDC, NIH/NCBI/PubMed, CMS, official federal and state authorities, state professional/licensing authorities and applicable specialty guidelines. International sources such as WHO may supplement but do not silently replace U.S.-specific regulation or clinical context.
+
+For United States law and regulation, use primary federal and state authorities first; distinguish federal law from state law and binding law from guidance, proposals or commentary.
+
+### Knowledge trust rule
+
+Source type alone does not establish truth. Peer review, official publication, credentials, virality, citations or model confidence are inputs to evaluation, not substitutes for verification.
+
+The preferred decision chain is:
+
+`claim → supporting evidence → counter-evidence → provenance → freshness/retraction check → jurisdiction/context → confidence → independent verification → decision → Human Gate when consequential`
+
 ## Lock hierarchy
 
 1. Memory Lock — canonical conversational decision.
 2. Project Spec Lock — this versioned repository decision.
 3. Runtime Lock — application-enforced Canonical Decisions Registry.
 
-Changing KD-005 or KD-006 requires an explicit human-approved decision change; agents, tools and automated optimization may not silently overwrite them.
+Changing KD-005, KD-006 or KD-007 requires an explicit human-approved decision change; agents, tools and automated optimization may not silently overwrite them.
