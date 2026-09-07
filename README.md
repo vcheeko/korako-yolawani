@@ -67,7 +67,7 @@ Run the complete public proof stack:
 npm test
 ```
 
-A fresh GitHub-hosted run on commit `e56f90089674471443dd09c0ecceb11fb6d66712` completed **SUCCESS**. See [`public-evidence/runs/2026-09-06-public-golden-v0.1.md`](public-evidence/runs/2026-09-06-public-golden-v0.1.md).
+The current public `main` proof workflow is green; each public change is rechecked by the `public-evidence` GitHub Actions workflow.
 
 For a fresh third-party review, use [`docs/INDEPENDENT_REPRODUCTION.md`](docs/INDEPENDENT_REPRODUCTION.md).
 
