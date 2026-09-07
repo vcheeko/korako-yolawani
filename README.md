@@ -30,7 +30,7 @@ Korako is also designed to reduce **human-postman work**: manually carrying cont
 
 ## Public proof now
 
-The repository now contains a minimal dependency-free **Public Golden v0.1** runtime that can be rerun by an external reviewer.
+The repository contains a minimal dependency-free **Public Golden v0.1** runtime that can be rerun by an external reviewer.
 
 It reproduces:
 
@@ -51,6 +51,8 @@ npm test
 
 A fresh GitHub-hosted run on commit `e56f90089674471443dd09c0ecceb11fb6d66712` completed **SUCCESS**. See [`public-evidence/runs/2026-09-06-public-golden-v0.1.md`](public-evidence/runs/2026-09-06-public-golden-v0.1.md).
 
+For a fresh third-party review, use [`docs/INDEPENDENT_REPRODUCTION.md`](docs/INDEPENDENT_REPRODUCTION.md).
+
 ## Development snapshot · 2026-09-07
 
 Current development includes:
@@ -62,7 +64,11 @@ Current development includes:
 - a **Personal Symphony control room** for human-visible orchestration state;
 - enforced **Human Gate**, evidence and verifier boundaries for consequential work;
 - internal **Golden Daily Use** activation with live **No-Postman** evidence collection;
+- an internally verified production Mira browser flow from typed goal to visible answer;
+- an internally verified bounded read-only flow from Mira `PREPARED` → explicit safe confirmation → runner `DONE` → evidence → UI `VERIFIED`;
 - the first publicly reproducible Golden control-loop slice with passing clean-run CI.
+
+The latest sanitized development record is [`public-evidence/runs/2026-09-07-proof-stack-v0.2.md`](public-evidence/runs/2026-09-07-proof-stack-v0.2.md).
 
 These are development milestones, not a claim of production readiness or complete public reproduction of the private runtime.
 
@@ -105,6 +111,7 @@ This repository currently provides:
 - a public recovery/failure reproduction;
 - No-Postman instrumentation with an explicit no-fake-baseline rule;
 - a development evidence ledger separating public proof from private development claims;
+- a fresh-clone independent reproduction protocol;
 - explicit public/private boundaries and limitations;
 - an external-review packet designed to make claims falsifiable;
 - a security disclosure policy for the public surface.
@@ -141,13 +148,15 @@ npm run golden:benchmark
 For a fast technical review, follow this order:
 
 1. [`docs/DEVELOPMENT_EVIDENCE.md`](docs/DEVELOPMENT_EVIDENCE.md) — current truth table.
-2. [`public-golden/v0.1/`](public-golden/v0.1/) — runnable Golden control-loop slice.
-3. [`public-evidence/runs/2026-09-06-public-golden-v0.1.md`](public-evidence/runs/2026-09-06-public-golden-v0.1.md) — recorded clean-run result.
-4. [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — control-loop architecture.
-5. [`docs/EVIDENCE.md`](docs/EVIDENCE.md) — evidence boundaries.
-6. [`public-evidence/v0.2/`](public-evidence/v0.2/) — verifier and adversarial vectors.
-7. [`docs/EXTERNAL_REVIEW.md`](docs/EXTERNAL_REVIEW.md) — falsifiable independent-review packet.
-8. [`SECURITY.md`](SECURITY.md) — responsible vulnerability reporting.
+2. [`docs/INDEPENDENT_REPRODUCTION.md`](docs/INDEPENDENT_REPRODUCTION.md) — fresh-clone reviewer protocol and verdict template.
+3. [`public-golden/v0.1/`](public-golden/v0.1/) — runnable Golden control-loop slice.
+4. [`public-evidence/runs/2026-09-06-public-golden-v0.1.md`](public-evidence/runs/2026-09-06-public-golden-v0.1.md) — recorded clean public run.
+5. [`public-evidence/runs/2026-09-07-proof-stack-v0.2.md`](public-evidence/runs/2026-09-07-proof-stack-v0.2.md) — sanitized private-runtime development evidence.
+6. [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — control-loop architecture.
+7. [`docs/EVIDENCE.md`](docs/EVIDENCE.md) — evidence boundaries.
+8. [`public-evidence/v0.2/`](public-evidence/v0.2/) — verifier and adversarial vectors.
+9. [`docs/EXTERNAL_REVIEW.md`](docs/EXTERNAL_REVIEW.md) — falsifiable external-review packet.
+10. [`SECURITY.md`](SECURITY.md) — responsible vulnerability reporting.
 
 ## Current credibility milestones
 
@@ -158,9 +167,11 @@ For a fast technical review, follow this order:
 - [x] development evidence ledger added;
 - [x] minimal public Golden runtime reproduced;
 - [x] recovery scenario reproduced in the public runtime;
+- [x] internally verified real Mira/Korako browser flow from goal to a useful verified read-only result;
+- [x] live Korako-side No-Postman instrumentation with zero observed relay inside the bounded flow;
+- [x] independent reproduction protocol prepared;
 - [x] responsible security disclosure policy added;
-- [ ] measured manual-vs-Korako No-Postman baseline with defensible time-saved data;
-- [ ] real user-facing Mira/Korako demo from goal to useful verified result;
+- [ ] measured human manual-vs-Korako No-Postman baseline with defensible time-saved data;
 - [ ] independent third-party reproduction/review returned;
 - [ ] pilot evidence showing reduced manual coordination without weakening human control.
 
