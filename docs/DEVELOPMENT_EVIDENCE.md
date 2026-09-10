@@ -1,9 +1,9 @@
 # Korako Yolawani — Development Evidence Ledger
 
-**Status date:** 2026-09-07  
-**Stage:** active prototype / personal daily-use validation
+**Status date:** 2026-09-10  
+**Stage:** active prototype / Golden Demo validation
 
-This ledger separates what can be reproduced publicly from what has been verified only inside the private development core.
+This ledger separates what can be reproduced publicly from what has been verified only inside the private development runtime.
 
 ## Evidence classes
 
@@ -38,13 +38,13 @@ Run the complete public proof stack with:
 npm test
 ```
 
-A fresh GitHub-hosted run on commit `e56f90089674471443dd09c0ecceb11fb6d66712` completed successfully. The Golden slice reached `VERIFIED`, rejected execution without approval, verified with a distinct verifier identity, reproduced recovery after an interruption, and observed zero human-postman transfers inside the bounded automated slice.
+A previously recorded fresh GitHub-hosted run on commit `e56f90089674471443dd09c0ecceb11fb6d66712` completed successfully. The Golden slice reached `VERIFIED`, rejected execution without approval, verified with a distinct verifier identity, reproduced recovery after an interruption, and observed zero human-postman transfers inside the bounded automated slice.
 
 See [`public-evidence/runs/2026-09-06-public-golden-v0.1.md`](../public-evidence/runs/2026-09-06-public-golden-v0.1.md).
 
 ### Independent reproduction protocol — PUBLICLY AVAILABLE
 
-[`INDEPENDENT_REPRODUCTION.md`](INDEPENDENT_REPRODUCTION.md) now provides a fresh-clone review protocol, expected evidence markers and a reviewer verdict template. The protocol exists; **an independent third-party result has not yet been returned**.
+[`INDEPENDENT_REPRODUCTION.md`](INDEPENDENT_REPRODUCTION.md) provides a fresh-clone review protocol, expected evidence markers and a reviewer verdict template. The protocol exists; **an independent third-party result has not yet been returned**.
 
 ### No-Postman measurement boundary — PARTIALLY PUBLICLY REPRODUCIBLE
 
@@ -59,43 +59,58 @@ So the repo proves the instrumentation works, but **does not yet prove quantifie
 
 | Milestone | Evidence class | Current truth |
 | --- | --- | --- |
-| Personal Alpha | INTERNALLY VERIFIED | Integrated into the private canonical development core |
-| Hybrid Mira Orb | INTERNALLY VERIFIED / IN VALIDATION | Integrated; natural uninterrupted conversation is still being refined |
-| Local/free-first voice routing | INTERNALLY VERIFIED / IN VALIDATION | Integrated with paid/cloud escalation guarded rather than used as the default path |
-| Human Gate preview/authority boundary | INTERNALLY VERIFIED | Preview and authorization remain distinct for consequential work |
-| Personal Symphony control room | INTERNALLY VERIFIED / IN VALIDATION | Human-visible orchestration state integrated for daily-use validation |
-| Golden Daily Use | INTERNALLY VERIFIED / IN VALIDATION | Activated for personal daily-use validation |
-| Local real-use smoke · 2026-09-07 | INTERNALLY VERIFIED | Local date, free-web and local-chat paths returned successfully; guarded work surfaces remained bounded |
-| Production Mira text E2E · 2026-09-07 | INTERNALLY VERIFIED | Clean production build, hydrated Mira input, browser submit, visible user turn and visible Mira response all passed |
-| Safe Git-status E2E · 2026-09-07 | INTERNALLY VERIFIED | Mira `PREPARED` → explicit safe confirmation → new read-only runner task → `DONE` → evidence count 1 → UI `VERIFIED` |
-| Live No-Postman UI instrumentation · 2026-09-07 | INTERNALLY VERIFIED | 0 human-postman transfers, 0 requested tool switches and 0 requested copy/paste inside the bounded Korako flow; manual baseline remains unmeasured |
+| Personal Alpha | INTERNALLY VERIFIED | Integrated into the private canonical development runtime |
+| Hybrid Mira Orb | INTERNALLY VERIFIED / IN VALIDATION | Integrated; natural uninterrupted conversation and final browser voice acceptance are still being refined |
+| Local/free-first voice routing | INTERNALLY VERIFIED / IN VALIDATION | Local speech-to-text is available; browser/TTS completion remains in validation |
+| Human Gate preview/authority boundary | INTERNALLY VERIFIED | Consequential email sending remains preview-only without explicit approval |
+| Human Journey Spine | INTERNALLY VERIFIED / IN VALIDATION | Canonical user-facing model uses five visible stages: Listen → Understand → Plan → Verify → Done; Human Gate remains an interrupt, not a completion stage |
+| Golden Daily Use | INTERNALLY VERIFIED / IN VALIDATION | Active as the current personal Golden Demo validation path |
+| Production Mira text E2E · 2026-09-07 | INTERNALLY VERIFIED | Clean production build, hydrated Mira input, browser submit, visible user turn and visible Mira response passed |
+| Safe Git-status E2E · 2026-09-07 | INTERNALLY VERIFIED | Mira `PREPARED` → explicit safe confirmation → read-only runner task → `DONE` → evidence → UI `VERIFIED` passed |
+| Live No-Postman UI instrumentation · 2026-09-07 | INTERNALLY VERIFIED | 0 human-postman transfers, 0 requested tool switches and 0 requested copy/paste inside the bounded tested flow; manual baseline remains unmeasured |
+| Golden Demo automated gate · 2026-09-10 | INTERNALLY VERIFIED | **413 tests passed, 0 failed, 1 environment-dependent skip**; TypeScript validation passed; production Webpack build passed |
+| Golden Demo production smoke · 2026-09-10 | INTERNALLY VERIFIED | Local production runtime root returned HTTP 200; calculator, current weather, Slovenian cinema schedule lookup, Slovenia job search, Tirol job search and governed email-send blocking returned expected bounded results |
+| Slovenian rail intent routing · 2026-09-10 | INTERNALLY VERIFIED | Natural Slovenian train phrasing routes to the bounded official rail/IJPP fallback rather than generic search |
+| Live LPP departure retrieval · 2026-09-10 | IN VALIDATION | Official LPP source can return departure data, but the bounded Korako runtime path still needs latency/fetch-path completion before this is called verified |
+| Natural voice / TTS Golden acceptance · 2026-09-10 | IN VALIDATION | Local STT path is ready in the tested runtime; final browser speech-output/TTS acceptance and uninterrupted natural conversation are not yet proven |
 
-A sanitized record of the latest product-runtime proof is available at [`public-evidence/runs/2026-09-07-proof-stack-v0.2.md`](../public-evidence/runs/2026-09-07-proof-stack-v0.2.md). It intentionally does not expose private code, credentials, machine paths or security-sensitive configuration.
+The current 2026-09-10 record intentionally exposes only sanitized result-level evidence. It does not publish private code, private branch identities, credentials, machine paths or security-sensitive configuration.
 
-## Current measured Korako-side timings
+## Current build step — PROOF-001
 
-For the internally verified bounded `preveri git status` flow:
+The primary user-facing evidence gate remains [PROOF-001 — Voice → Verified Action](https://github.com/vcheeko/korako-yolawani/issues/3).
 
-- PREPARED visible: approximately **0.20 s**;
-- runner task DONE: approximately **3.15 s**;
-- UI VERIFIED: approximately **7.50 s**.
+The current objective is to prove one real useful journey:
 
-The final number includes the current UI polling interval. These timings are observations of one development run, not production latency claims or time-saved claims.
+`Mira voice → intent → visible journey state → bounded plan → capability route → execution where authorized → independent verification → evidence → verified result`
+
+Passing automated tests or a production build alone does **not** close this gate.
 
 ## What this does not prove
 
-The current evidence does not prove production readiness, security against all threats, independent third-party acceptance, commercial validation, model intelligence, or that the private runtime is publicly reproducible end to end.
+The current evidence does not prove:
 
-It also does not yet prove a quantified reduction in human coordination time. That requires a measured baseline-vs-Korako human trial rather than estimates.
+- production readiness;
+- security against all threats;
+- complete natural voice acceptance;
+- 10 consecutive successful end-to-end Golden runs;
+- independent third-party acceptance;
+- quantified time saved versus a measured manual baseline;
+- commercial validation;
+- that the private canonical runtime is publicly reproducible end to end.
 
 ## Next evidence milestones
 
 - [x] minimal public Golden runtime connecting plan → authority → bounded execution → evidence → verification → persistent continuation;
 - [x] public recovery/failure scenario reproduced end to end;
-- [x] internally verified local real-use smoke;
 - [x] internally verified real Mira/Korako browser flow from goal to useful verified read-only result;
-- [x] live Korako-side No-Postman instrumentation with zero observed relay in the bounded flow;
-- [x] independent reproduction protocol prepared;
+- [x] live Korako-side No-Postman instrumentation with zero observed relay in the bounded tested flow;
+- [x] current private Golden Demo line passes the full automated test and production build gate;
+- [x] current production smoke covers calculator, weather, cinema, Slovenia jobs, Tirol jobs and governed email preview/send blocking;
+- [ ] browser/TTS acceptance for natural Mira conversation;
+- [ ] live LPP departure retrieval through the bounded runtime path;
+- [ ] one repeated real Mira voice → useful action → independent verification Golden path;
+- [ ] 10 consecutive bounded Golden runs or fully classified failures;
 - [ ] measured human manual-vs-Korako baseline with defensible time-saved data;
 - [ ] independent third-party reproduction/review returned;
 - [ ] pilot evidence from a real external workflow/user;
@@ -105,6 +120,7 @@ It also does not yet prove a quantified reduction in human coordination time. Th
 
 ```text
 PREPARED != EXECUTED != VERIFIED != PUBLICLY REPRODUCIBLE
+CI_VERIFIED != BROWSER_E2E_VERIFIED != FOUNDER_ACCEPTED
 ```
 
 The purpose of this ledger is not to make Korako look more finished than it is. It is to make progress inspectable and claims falsifiable.
