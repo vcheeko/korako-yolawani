@@ -4,7 +4,7 @@
 
 [![Public evidence](https://github.com/vcheeko/korako-yolawani/actions/workflows/public-evidence.yml/badge.svg)](https://github.com/vcheeko/korako-yolawani/actions/workflows/public-evidence.yml)
 
-**Stage:** active prototype / personal daily-use validation  
+**Stage:** active prototype / Golden Demo validation  
 **Production-ready:** no  
 **Canonical implementation:** private  
 **Public purpose:** focused diligence surface for the product thesis, reproducible control-loop proofs, explicit limitations and independent review
@@ -28,6 +28,36 @@ GOAL
 
 Korako is also designed to reduce **human-postman work**: manually carrying context, instructions, files and status between otherwise capable systems.
 
+## Current build step — Golden Demo / PROOF-001
+
+**Status date:** 2026-09-10
+
+The current development focus is not broad feature expansion. It is proving one useful Mira journey end to end and making that proof repeatable.
+
+### Latest internally verified progress
+
+- current private Golden Demo development line: **413 automated tests passed, 0 failed, 1 environment-dependent skip**;
+- TypeScript validation and a production Webpack build passed;
+- production runtime root returned HTTP 200 in local smoke validation;
+- deterministic calculator, current weather, Slovenian cinema schedule lookup, Slovenia job search and Tirol job search passed live runtime smoke checks;
+- consequential email sending remained blocked behind a **Human Gate** and preview-only without approval;
+- local/free-first speech-to-text was available in the current development runtime;
+- the five-stage human journey remains **Listen → Understand → Plan → Verify → Done**, with Human Gate represented as an interrupt rather than a fake sixth completion stage.
+
+### Still in validation
+
+- natural voice completion and browser/TTS acceptance;
+- live LPP departure retrieval through the bounded runtime path;
+- repeated end-to-end Mira voice → useful action → independent verification evidence;
+- external-user evidence;
+- independent third-party reproduction of the current user-facing path.
+
+**Next gate:** browser/voice acceptance → canonical product integration → external tester evidence → sanitized public proof update.
+
+Track the user-facing proof gate in [PROOF-001 — Voice → Verified Action](https://github.com/vcheeko/korako-yolawani/issues/3).
+
+These are development milestones, **not** claims of production readiness or complete public reproduction of the private runtime.
+
 ## Why the name — Korako Yolawani
 
 The name is part of the product idea, not just a label.
@@ -35,14 +65,6 @@ The name is part of the product idea, not just a label.
 **Korako** comes from the Slovenian idea of **korak / koraki — a step / steps**. The product is built around helping a person move through complex work one meaningful step at a time while preserving context, direction and control.
 
 **Yolawani** represents the wider **human journey around those steps** — the life, goals, decisions, projects and experiences that give each step meaning. It is used as the distinctive second part of the brand rather than as a literal translation from another language.
-
-There is also a philosophical parallel in Japanese:
-
-- **道 (*michi*)** — path / way;
-- **人生 (*jinsei*)** — human life / one's life;
-- **人生の道 (*jinsei no michi*)** — *the path of life* / *the way through life*.
-
-This Japanese expression is **inspiration and a conceptual parallel, not the linguistic origin or literal translation of Korako Yolawani**.
 
 > **A life is not one task. It is a journey made of steps. Korako helps the human move through those steps without losing the journey.**
 
@@ -67,36 +89,18 @@ Run the complete public proof stack:
 npm test
 ```
 
-The current public `main` proof workflow is green; each public change is rechecked by the `public-evidence` GitHub Actions workflow.
+Each public change is rechecked by the repository's GitHub Actions evidence workflow.
 
 For a fresh third-party review, use [`docs/INDEPENDENT_REPRODUCTION.md`](docs/INDEPENDENT_REPRODUCTION.md).
 
-## Development snapshot · 2026-09-07
-
-Current development includes:
-
-- **Personal Alpha** integrated in the private core;
-- a **Hybrid Mira Orb** with a **local/free-first voice path** integrated;
-- natural continuous voice interaction still under active refinement;
-- a **desktop/PWA daily-use path** in active validation;
-- a **Personal Symphony control room** for human-visible orchestration state;
-- enforced **Human Gate**, evidence and verifier boundaries for consequential work;
-- internal **Golden Daily Use** activation with live **No-Postman** evidence collection;
-- an internally verified production Mira browser flow from typed goal to visible answer;
-- an internally verified bounded read-only flow from Mira `PREPARED` → explicit safe confirmation → runner `DONE` → evidence → UI `VERIFIED`;
-- the first publicly reproducible Golden control-loop slice with passing clean-run CI.
-
-The latest sanitized development record is [`public-evidence/runs/2026-09-07-proof-stack-v0.2.md`](public-evidence/runs/2026-09-07-proof-stack-v0.2.md).
-
-These are development milestones, not a claim of production readiness or complete public reproduction of the private runtime.
-
-**Evidence ledger:** [`docs/DEVELOPMENT_EVIDENCE.md`](docs/DEVELOPMENT_EVIDENCE.md) separates **PUBLICLY REPRODUCIBLE**, **INTERNALLY VERIFIED**, **IN VALIDATION** and **NOT YET PROVEN** claims.
+The current truth ledger is [`docs/DEVELOPMENT_EVIDENCE.md`](docs/DEVELOPMENT_EVIDENCE.md), which separates **PUBLICLY REPRODUCIBLE**, **INTERNALLY VERIFIED**, **IN VALIDATION** and **NOT YET PROVEN** claims.
 
 ## Naming
 
 - **KORAKO YOLAWANI** — public product and brand.
 - **Mira** — conversational interface/persona.
-- The canonical orchestration implementation remains private.
+- **KORA** — internal control-plane / governance / orchestration foundation.
+- The canonical product/runtime implementation remains private.
 
 ## The problem
 
@@ -116,6 +120,7 @@ Korako explores an operating model where those coordination duties become explic
 - **Safe parallelism** for independent bounded work.
 - **Free/local-first routing** where practical, with paid escalation only when materially needed.
 - **Less human-postman work** between systems.
+- **Preview before consequential external action**.
 
 ## What is public today
 
@@ -142,6 +147,7 @@ Korako deliberately distinguishes:
 
 ```text
 PREPARED != EXECUTED != VERIFIED != PUBLICLY REPRODUCED
+CI_VERIFIED != BROWSER_E2E_VERIFIED != FOUNDER_ACCEPTED
 ```
 
 ### Reproduce everything public
@@ -166,13 +172,13 @@ npm run golden:benchmark
 For a fast technical review, follow this order:
 
 1. [`docs/DEVELOPMENT_EVIDENCE.md`](docs/DEVELOPMENT_EVIDENCE.md) — current truth table.
-2. [`docs/INDEPENDENT_REPRODUCTION.md`](docs/INDEPENDENT_REPRODUCTION.md) — fresh-clone reviewer protocol and verdict template.
-3. [`public-golden/v0.1/`](public-golden/v0.1/) — runnable Golden control-loop slice.
-4. [`public-evidence/runs/2026-09-06-public-golden-v0.1.md`](public-evidence/runs/2026-09-06-public-golden-v0.1.md) — recorded clean public run.
-5. [`public-evidence/runs/2026-09-07-proof-stack-v0.2.md`](public-evidence/runs/2026-09-07-proof-stack-v0.2.md) — sanitized private-runtime development evidence.
-6. [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — control-loop architecture.
-7. [`docs/EVIDENCE.md`](docs/EVIDENCE.md) — evidence boundaries.
-8. [`public-evidence/v0.2/`](public-evidence/v0.2/) — verifier and adversarial vectors.
+2. [PROOF-001](https://github.com/vcheeko/korako-yolawani/issues/3) — current user-facing Golden proof gate.
+3. [`docs/INDEPENDENT_REPRODUCTION.md`](docs/INDEPENDENT_REPRODUCTION.md) — fresh-clone reviewer protocol and verdict template.
+4. [`public-golden/v0.1/`](public-golden/v0.1/) — runnable Golden control-loop slice.
+5. [`public-evidence/runs/2026-09-06-public-golden-v0.1.md`](public-evidence/runs/2026-09-06-public-golden-v0.1.md) — recorded clean public run.
+6. [`public-evidence/runs/2026-09-07-proof-stack-v0.2.md`](public-evidence/runs/2026-09-07-proof-stack-v0.2.md) — sanitized private-runtime development evidence.
+7. [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — control-loop architecture.
+8. [`docs/EVIDENCE.md`](docs/EVIDENCE.md) — evidence boundaries.
 9. [`docs/EXTERNAL_REVIEW.md`](docs/EXTERNAL_REVIEW.md) — falsifiable external-review packet.
 10. [`SECURITY.md`](SECURITY.md) — responsible vulnerability reporting.
 
@@ -187,8 +193,12 @@ For a fast technical review, follow this order:
 - [x] recovery scenario reproduced in the public runtime;
 - [x] internally verified real Mira/Korako browser flow from goal to a useful verified read-only result;
 - [x] live Korako-side No-Postman instrumentation with zero observed relay inside the bounded flow;
+- [x] current private Golden Demo line passes the full automated suite and production build gate;
+- [x] current runtime smoke evidence covers several useful everyday/work capabilities without bypassing Human Gate;
 - [x] independent reproduction protocol prepared;
 - [x] responsible security disclosure policy added;
+- [ ] complete natural voice/browser acceptance for the current Golden Demo;
+- [ ] repeated voice → useful action → independently verified result evidence;
 - [ ] measured human manual-vs-Korako No-Postman baseline with defensible time-saved data;
 - [ ] independent third-party reproduction/review returned;
 - [ ] pilot evidence showing reduced manual coordination without weakening human control.
