@@ -1,0 +1,10 @@
+# Default ownership
+* @vcheeko
+
+# Governance / security-sensitive public surfaces
+/.github/ @vcheeko
+/SECURITY.md @vcheeko
+/docs/ @vcheeko
+/public-kora/ @vcheeko
+/public-evidence/ @vcheeko
+/public-golden/ @vcheeko

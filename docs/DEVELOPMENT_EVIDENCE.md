@@ -20,7 +20,7 @@ This ledger separates what can be reproduced publicly from what has been verifie
 
 Its integrated Golden path also runs a bounded local action through policy → lifecycle → execution → ledger → independent verification, while a simulated external mutation remains unexecuted behind a receipt-bound Human Gate.
 
-The latest local release-candidate run is recorded in [`2026-09-12-kora-trust-release-candidate.md`](../public-evidence/runs/2026-09-12-kora-trust-release-candidate.md). Push, remote CI, PR and merge remain pending Human Gate, so the new contract must not yet be described as released on public `main`.
+The release-candidate evidence is recorded in [`2026-09-12-kora-trust-release-candidate.md`](../public-evidence/runs/2026-09-12-kora-trust-release-candidate.md). KORA Trust Contract v0.1 was merged to public `main` through PR #5 on 2026-09-12. GitHub Actions `public-evidence` run #31 completed successfully on merged commit `bdc6c7017e1698822e5ee5382e60f4e1fd4963cb`.
 
 The companion ROI validator is also executable, but deliberately reports `EVIDENCE_INCOMPLETE` until paired human manual-vs-Korako measurements are supplied. No time-saved claim is made from automated timings alone.
 
