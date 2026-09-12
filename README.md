@@ -48,6 +48,17 @@ This Japanese expression is **inspiration and a conceptual parallel, not the lin
 
 ## Public proof now
 
+### KORA Trust Contract v0.1
+
+The public proof stack now includes a machine-checked trust contract covering bounded authority, exact scope/budget binding, FREE/LOCAL FIRST routing, approval receipt integrity and replay rejection, tamper-evident evidence chaining, worker/verifier separation, lifecycle ordering and fail-closed recovery.
+
+```bash
+npm run trust
+npm run trust:golden
+```
+
+See [`KORA_TRUST_KERNEL.md`](docs/KORA_TRUST_KERNEL.md) and [`RELIABILITY_AND_ROI.md`](docs/RELIABILITY_AND_ROI.md). The ROI validator intentionally refuses a time-saved claim until real paired measurements exist.
+
 The repository contains a minimal dependency-free **Public Golden v0.1** runtime that can be rerun by an external reviewer.
 
 It reproduces:

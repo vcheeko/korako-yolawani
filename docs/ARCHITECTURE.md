@@ -34,6 +34,10 @@ safe / bounded        Human Gate
 
 The key claim is not that every task needs a complex agent stack. The claim is that long-running AI-assisted work becomes more reliable when authority, state, evidence, jurisdiction and recovery are explicit.
 
+## Trust kernel boundary
+
+Mira is the interface, KORA is the internal trust kernel, and Spine is the human-observable projection. Providers and agents are replaceable workers. The public executable contract for versioned policy, bounded authority, cost routing, approval binding, evidence integrity, independent verification and recovery is documented in [`KORA_TRUST_KERNEL.md`](./KORA_TRUST_KERNEL.md).
+
 ## Knowledge preflight
 
 For tasks whose correctness depends on external knowledge, Korako uses a federated Human Knowledge Fabric rather than treating one model or one corpus as truth. Consequential claims should preserve provenance, evidence, counter-evidence, freshness and applicable jurisdiction before they influence action.

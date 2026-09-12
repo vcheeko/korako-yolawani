@@ -1,6 +1,6 @@
 # Korako Yolawani — Development Evidence Ledger
 
-**Status date:** 2026-09-07  
+**Status date:** 2026-09-12
 **Stage:** active prototype / personal daily-use validation
 
 This ledger separates what can be reproduced publicly from what has been verified only inside the private development core.
@@ -13,6 +13,16 @@ This ledger separates what can be reproduced publicly from what has been verifie
 - **NOT YET PROVEN** — a target that should not be presented as achieved.
 
 ## Proven publicly today
+
+### KORA Trust Contract v0.1 — PUBLICLY REPRODUCIBLE
+
+[`public-kora/v0.1/`](../public-kora/v0.1/) executes deterministic positive and adversarial checks for authority, risk, FREE/LOCAL FIRST, budget scope, approval binding/expiry/replay, tamper-evident evidence, independent verification, lifecycle ordering and recovery.
+
+Its integrated Golden path also runs a bounded local action through policy → lifecycle → execution → ledger → independent verification, while a simulated external mutation remains unexecuted behind a receipt-bound Human Gate.
+
+The latest local release-candidate run is recorded in [`2026-09-12-kora-trust-release-candidate.md`](../public-evidence/runs/2026-09-12-kora-trust-release-candidate.md). Push, remote CI, PR and merge remain pending Human Gate, so the new contract must not yet be described as released on public `main`.
+
+The companion ROI validator is also executable, but deliberately reports `EVIDENCE_INCOMPLETE` until paired human manual-vs-Korako measurements are supplied. No time-saved claim is made from automated timings alone.
 
 ### Public evidence-contract harness — PUBLICLY REPRODUCIBLE
 
