@@ -1,7 +1,7 @@
 # Korako Yolawani — Locked Decisions
 
 Status: **CANONICAL / LOCKED**  
-Effective: **2026-09-07**
+Effective: **2026-09-12**
 
 A locked decision is not a suggestion. It remains the default architecture until Miha explicitly approves a change.
 
@@ -77,10 +77,22 @@ The preferred decision chain is:
 
 `claim → supporting evidence → counter-evidence → provenance → freshness/retraction check → jurisdiction/context → confidence → independent verification → decision → Human Gate when consequential`
 
+## KD-008 — KORA Trust Kernel positioning
+
+**Selection:** KORAKO TRUST KERNEL + RELIABILITY BENCHMARK.
+
+- **Mira is the only conversational human-facing interface.**
+- **KORA is the internal trust kernel/control plane**, not a second persona or public dashboard.
+- **Spine is human observability**, not a competing interface.
+- Models, voice providers, agents, tools, MCP servers and computer-use systems are replaceable workers rather than Korako's identity.
+- Korako's defensible layer is the versioned combination of bounded authority, policy, provenance, cost control, evidence, independent verification, lifecycle integrity and recovery.
+- No external action, publication, destructive change, permission expansion or unapproved cost may bypass its applicable Human Gate.
+- A claim of time saved requires paired human measurement; automated timing alone is insufficient.
+
 ## Lock hierarchy
 
 1. Memory Lock — canonical conversational decision.
 2. Project Spec Lock — this versioned repository decision.
 3. Runtime Lock — application-enforced Canonical Decisions Registry.
 
-Changing KD-005, KD-006 or KD-007 requires an explicit human-approved decision change; agents, tools and automated optimization may not silently overwrite them.
+Changing KD-005, KD-006, KD-007 or KD-008 requires an explicit human-approved decision change; agents, tools and automated optimization may not silently overwrite them.

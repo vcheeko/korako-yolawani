@@ -1,6 +1,6 @@
 {
   "name": "korako-yolawani-public",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,7 +8,11 @@
     "golden": "node public-golden/v0.1/demo.mjs",
     "golden:recovery": "node public-golden/v0.1/recovery.mjs",
     "golden:benchmark": "node public-golden/v0.1/benchmark.mjs",
-    "proof": "npm run evidence && npm run golden && npm run golden:recovery && npm run golden:benchmark",
+    "trust": "node public-kora/v0.1/reliability.mjs",
+    "trust:golden": "node public-kora/v0.1/integrated-golden.mjs",
+    "roi:check": "node benchmarks/roi/validate.mjs",
+    "roi:selftest": "node benchmarks/roi/selftest.mjs",
+    "proof": "npm run evidence && npm run golden && npm run golden:recovery && npm run golden:benchmark && npm run trust && npm run trust:golden && npm run roi:selftest && npm run roi:check",
     "test": "npm run proof"
   },
   "engines": { "node": ">=20" }
