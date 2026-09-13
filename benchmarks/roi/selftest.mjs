@@ -3,6 +3,7 @@ import { mkdtemp, writeFile } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 
 const workspace = await mkdtemp(path.join(os.tmpdir(), 'korako-roi-selftest-'));
 const validPath = path.join(workspace, 'ten-pairs.csv');
@@ -16,7 +17,7 @@ for (let index = 1; index <= 10; index += 1) {
 await writeFile(validPath, `${rows.join('\n')}\n`, 'utf8');
 await writeFile(invalidPath, `${header}\n1,job-search,guess,test-user,1,1,1,1,0,0,true,2026-09-12T12:00:00.000Z\n`, 'utf8');
 
-const validatorPath = new URL('./validate.mjs', import.meta.url).pathname;
+const validatorPath = fileURLToPath(new URL('./validate.mjs', import.meta.url));
 const valid = spawnSync(process.execPath, [validatorPath, validPath], { encoding: 'utf8' });
 assert.equal(valid.status, 0, valid.stderr);
 const report = JSON.parse(valid.stdout);
