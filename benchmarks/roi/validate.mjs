@@ -1,8 +1,9 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const required = ['trial_id', 'workflow_id', 'mode', 'user_id', 'duration_seconds', 'clicks', 'tool_switches', 'copy_paste_transfers', 'errors', 'cost_eur', 'completed', 'measured_at'];
-const filePath = path.resolve(process.argv[2] ?? new URL('./manual-vs-korako-template.csv', import.meta.url).pathname);
+const filePath = path.resolve(process.argv[2] ?? fileURLToPath(new URL('./manual-vs-korako-template.csv', import.meta.url)));
 const raw = await readFile(filePath, 'utf8');
 const lines = raw.trim().split(/\r?\n/).filter(Boolean);
 const headers = (lines[0] ?? '').split(',');
