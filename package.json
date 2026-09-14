@@ -10,9 +10,10 @@
     "golden:benchmark": "node public-golden/v0.1/benchmark.mjs",
     "trust": "node public-kora/v0.1/reliability.mjs",
     "trust:golden": "node public-kora/v0.1/integrated-golden.mjs",
+    "orchestra:check": "node orchestra/v0.1/selftest.mjs",
     "roi:check": "node benchmarks/roi/validate.mjs",
     "roi:selftest": "node benchmarks/roi/selftest.mjs",
-    "proof": "npm run evidence && npm run golden && npm run golden:recovery && npm run golden:benchmark && npm run trust && npm run trust:golden && npm run roi:selftest && npm run roi:check",
+    "proof": "npm run evidence && npm run golden && npm run golden:recovery && npm run golden:benchmark && npm run trust && npm run trust:golden && npm run orchestra:check && npm run roi:selftest && npm run roi:check",
     "test": "npm run proof"
   },
   "engines": { "node": ">=20" }
