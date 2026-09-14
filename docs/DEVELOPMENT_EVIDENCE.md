@@ -1,6 +1,6 @@
 # Korako Yolawani — Development Evidence Ledger
 
-**Status date:** 2026-09-12
+**Status date:** 2026-09-13
 **Stage:** active prototype / personal daily-use validation
 
 This ledger separates what can be reproduced publicly from what has been verified only inside the private development core.
@@ -74,13 +74,15 @@ So the repo proves the instrumentation works, but **does not yet prove quantifie
 | Local/free-first voice routing | INTERNALLY VERIFIED / IN VALIDATION | Integrated with paid/cloud escalation guarded rather than used as the default path |
 | Human Gate preview/authority boundary | INTERNALLY VERIFIED | Preview and authorization remain distinct for consequential work |
 | Personal Symphony control room | INTERNALLY VERIFIED / IN VALIDATION | Human-visible orchestration state integrated for daily-use validation |
+| ONE-MIRA canonical surface · 2026-09-13 | INTERNALLY VERIFIED | Active home/alpha/ops/phone paths converge on one Mira renderer; retired alternative UI surfaces are quarantined or redirected. Private gate: 446 tests, 445 pass, 0 fail, 1 environment-dependent skip; TypeScript and production build passed. |
+| ONE-MIRA browser layout · 2026-09-13 | INTERNALLY VERIFIED / IN VALIDATION | Desktop verification observed one active Mira renderer; true 393 × 852 browser emulation preserved all five Spine stages and all five Orchestra roles with document width equal to viewport width. Physical-device acceptance remains unproven. |
 | Golden Daily Use | INTERNALLY VERIFIED / IN VALIDATION | Activated for personal daily-use validation |
 | Local real-use smoke · 2026-09-07 | INTERNALLY VERIFIED | Local date, free-web and local-chat paths returned successfully; guarded work surfaces remained bounded |
 | Production Mira text E2E · 2026-09-07 | INTERNALLY VERIFIED | Clean production build, hydrated Mira input, browser submit, visible user turn and visible Mira response all passed |
 | Safe Git-status E2E · 2026-09-07 | INTERNALLY VERIFIED | Mira `PREPARED` → explicit safe confirmation → new read-only runner task → `DONE` → evidence count 1 → UI `VERIFIED` |
 | Live No-Postman UI instrumentation · 2026-09-07 | INTERNALLY VERIFIED | 0 human-postman transfers, 0 requested tool switches and 0 requested copy/paste inside the bounded Korako flow; manual baseline remains unmeasured |
 
-A sanitized record of the latest product-runtime proof is available at [`public-evidence/runs/2026-09-07-proof-stack-v0.2.md`](../public-evidence/runs/2026-09-07-proof-stack-v0.2.md). It intentionally does not expose private code, credentials, machine paths or security-sensitive configuration.
+A sanitized record of the latest product-runtime checkpoint is available at [`public-evidence/runs/2026-09-13-one-mira-canonical.md`](../public-evidence/runs/2026-09-13-one-mira-canonical.md). It intentionally does not expose private code, credentials, machine paths or security-sensitive configuration.
 
 ## Current measured Korako-side timings
 
@@ -105,6 +107,8 @@ It also does not yet prove a quantified reduction in human coordination time. Th
 - [x] internally verified local real-use smoke;
 - [x] internally verified real Mira/Korako browser flow from goal to useful verified read-only result;
 - [x] live Korako-side No-Postman instrumentation with zero observed relay in the bounded flow;
+- [x] ONE-MIRA canonical browser surface internally verified with zero automated test failures;
+- [ ] physical-device Mira acceptance and repeated voice → useful action → verified result evidence;
 - [x] independent reproduction protocol prepared;
 - [ ] measured human manual-vs-Korako baseline with defensible time-saved data;
 - [ ] independent third-party reproduction/review returned;
