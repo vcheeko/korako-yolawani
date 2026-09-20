@@ -1,6 +1,6 @@
 # Korako Yolawani — Public / Private IP Boundary
 
-**Status date:** 2026-09-12
+**Status date:** 2026-09-21
 
 This repository is intentionally a **public diligence, evidence and reproducibility surface**. It is not the canonical Korako implementation.
 
@@ -8,7 +8,7 @@ This repository is intentionally a **public diligence, evidence and reproducibil
 
 The repository may expose selected material needed to make technical claims inspectable and falsifiable, including:
 
-- product and architecture descriptions;
+- product descriptions and deliberately high-level architecture;
 - high-level control contracts;
 - sanitized proof slices;
 - evidence schemas and synthetic/adversarial vectors;
@@ -24,10 +24,18 @@ The following remain outside the intended public surface unless explicitly relea
 - credentials, tokens, keys and signing material;
 - machine, network and deployment configuration;
 - security-sensitive permission and escalation internals;
-- unpublished model/tool routing implementation;
+- detailed model/tool routing, provider enablement and canonical internal decision-registry implementation;
 - private operational logs or personal data;
 - unpublished pilot data;
 - unpublished product IP, experiments and implementation details.
+
+## Disclosure minimization rule
+
+Public evidence should answer **what can be independently checked?** without publishing every internal design choice required to build the private product.
+
+Detailed canonical decisions, routing weights, provider enablement state, permission/escalation internals and machine/runtime topology are therefore private by default. If a public proof needs one of those concepts, publish only the minimum bounded contract needed to make the claim falsifiable.
+
+Historical Git commits are a separate disclosure surface: sanitizing the current default branch does not erase earlier public versions.
 
 ## License status
 
