@@ -1,7 +1,7 @@
 # Korako Yolawani — Investor Diligence Snapshot
 
-**Status date:** 2026-09-12  
-**Stage:** active prototype / personal daily-use validation  
+**Status date:** 2026-09-21  
+**Stage:** active prototype / MIRA FIRST core reliability validation  
 **Production-ready:** no  
 **Canonical implementation:** private
 
@@ -45,9 +45,17 @@ The `public-evidence` GitHub Actions workflow reruns the public proof stack on p
 
 ## What is internally verified but not publicly reproduced end to end
 
-The private canonical development core has evidence for a Personal Alpha, Hybrid Mira Orb, local/free-first voice routing, Human Gate boundaries, human-visible orchestration state, a production Mira browser flow, a bounded read-only verified action flow and live No-Postman instrumentation.
+The private canonical development line now includes **KVSP v0.1** and the reconciled **Mira Text Core** on canonical `main`. The internal Mira voice 3-path trace has also reduced the current voice problem to a concrete convergence/wake/interruption verification gate rather than an undefined reliability issue.
 
-Those facts are recorded as **INTERNALLY VERIFIED** or **IN VALIDATION**, not as independently reproduced public claims. See [`DEVELOPMENT_EVIDENCE.md`](DEVELOPMENT_EVIDENCE.md).
+Current truth remains conservative:
+
+- text-first Mira behavior is merged in the private canonical line;
+- Space and orb activation are traced to the same main conversation controller;
+- the intended `Hey Mira` wake path and `Stop Mira` interruption still require exact-head review plus real browser/runtime proof;
+- 10 consecutive full-path voice PASS runs have **not** yet been established;
+- ONE VERIFIED JOURNEY and external-user evidence remain downstream milestones.
+
+These facts are **INTERNALLY VERIFIED**, **MERGED** or **IN VALIDATION** as specified in [`DEVELOPMENT_EVIDENCE.md`](DEVELOPMENT_EVIDENCE.md); they are not presented as independently reproduced public claims.
 
 ## What is not yet proven
 
@@ -82,22 +90,24 @@ These are design and architecture claims. Their business value still requires us
 - public/private boundary is explicit;
 - public proof is executable rather than documentation-only;
 - adversarial checks are included;
-- current CI is narrow and read-only;
+- public GitHub Actions use explicit read-only `contents: read` permissions;
+- referenced GitHub Actions are pinned to exact commit SHAs;
 - security reporting policy exists;
 - the repository avoids claiming production readiness;
 - the ROI layer fails closed when the measurement basis is incomplete;
-- current `main` is protected by a required `verify` status check.
+- current default-branch public-surface hygiene was reviewed again on 2026-09-21 with no obvious credential or machine-identity match found by the bounded scan.
 
 ## Current diligence gaps
 
 The highest-value next evidence is:
 
-1. independent third-party reproduction of the public proof stack;
-2. repeated Golden Demo runs covering real voice-to-useful-action flows;
-3. measured manual-vs-Korako paired trials for No-Postman/ROI evidence;
-4. real external user or pilot evidence;
-5. stronger production security review before any production-security claim;
-6. deeper branch/review governance as the contributor surface grows.
+1. complete MIRA CORE voice/session/wake/interruption verification against the exact current candidate;
+2. achieve and record 10 consecutive full-path runtime PASS runs;
+3. complete ONE VERIFIED JOURNEY with evidence from intent through verified result;
+4. independent third-party reproduction of the public proof stack;
+5. measured manual-vs-Korako paired trials for defensible Time Returned / No-Postman evidence;
+6. real external-user or pilot evidence;
+7. stronger production security review and repository-governance verification before any production-security claim.
 
 ## Reviewer path
 
