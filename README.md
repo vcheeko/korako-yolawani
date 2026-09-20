@@ -4,7 +4,7 @@
 
 [![Public evidence](https://github.com/vcheeko/korako-yolawani/actions/workflows/public-evidence.yml/badge.svg)](https://github.com/vcheeko/korako-yolawani/actions/workflows/public-evidence.yml)
 
-**Stage:** active prototype / personal daily-use validation  
+**Stage:** active prototype / MIRA FIRST core reliability validation  
 **Production-ready:** no  
 **Canonical implementation:** private  
 **Public purpose:** focused diligence surface for the product thesis, reproducible control-loop proofs, explicit limitations and independent review
@@ -86,40 +86,39 @@ The current public `main` proof workflow is green; each public change is recheck
 
 For a fresh third-party review, use [`docs/INDEPENDENT_REPRODUCTION.md`](docs/INDEPENDENT_REPRODUCTION.md).
 
-## Development snapshot · 2026-09-12
+## Development snapshot · 2026-09-21
 
-Current development includes:
+The public proof stack remains intentionally small and reproducible. Since the previous public snapshot, the private canonical development line has advanced in ways that are relevant to PROOF-001 but are **not** claimed as publicly reproduced end to end.
 
-- **Personal Alpha** integrated in the private core;
-- a **Hybrid Mira Orb** with a **local/free-first voice path** integrated;
-- natural continuous voice interaction still under active refinement;
-- a **desktop/PWA daily-use path** in active validation;
-- a **Personal Symphony control room** for human-visible orchestration state;
-- enforced **Human Gate**, evidence and verifier boundaries for consequential work;
-- internal **Golden Daily Use** activation with live **No-Postman** evidence collection;
-- an internally verified production Mira browser flow from typed goal to visible answer;
-- an internally verified bounded read-only flow from Mira `PREPARED` → explicit safe confirmation → runner `DONE` → evidence → UI `VERIFIED`;
-- the publicly reproducible KORA Trust Contract v0.1 and integrated Trust Golden path;
-- a public ROI validator that stays `EVIDENCE_INCOMPLETE` until real paired human measurements exist.
+Current sanitized development truth:
 
-The latest public trust release record is [`public-evidence/runs/2026-09-12-kora-trust-release-candidate.md`](public-evidence/runs/2026-09-12-kora-trust-release-candidate.md). The latest sanitized private-runtime development record remains [`public-evidence/runs/2026-09-07-proof-stack-v0.2.md`](public-evidence/runs/2026-09-07-proof-stack-v0.2.md).
+- **KVSP v0.1** is merged in the private canonical runtime as the machine-readable verified-work spine;
+- **Mira Text Core** was reconciled and merged to the private canonical `main` on 2026-09-20;
+- the internal Mira voice **3-path trace** has been completed for Space, orb activation and the intended `Hey Mira` path;
+- Space and orb are traced to the same main conversation controller;
+- a true wake-word entry and reliable `Stop Mira` interruption still require exact-head checking and browser/runtime proof;
+- natural voice reliability, physical-device acceptance and repeated voice-to-verified-action behavior remain **IN VALIDATION / NOT YET PROVEN**;
+- the public KORA Trust Contract v0.1, Public Golden v0.1 and fail-closed ROI measurement boundary remain publicly reproducible.
 
 These are development milestones, not a claim of production readiness or complete public reproduction of the private runtime.
 
 **Evidence ledger:** [`docs/DEVELOPMENT_EVIDENCE.md`](docs/DEVELOPMENT_EVIDENCE.md) separates **PUBLICLY REPRODUCIBLE**, **INTERNALLY VERIFIED**, **IN VALIDATION** and **NOT YET PROVEN** claims.
 
-### Current build step — Golden Demo / PROOF-001
+### Current build step — MIRA FIRST / PROOF-001
 
-The next credibility step is not another broad feature claim. It is repeated evidence around the real Golden Demo path:
+The active proof sequence is deliberately narrow:
 
-1. voice or direct intent reaches a useful bounded action;
-2. authority and Human Gate behavior are visible where required;
-3. execution produces evidence rather than only a conversational claim;
-4. worker and verifier remain distinct for consequential completion;
-5. the result is visible to the user and recoverable;
-6. repeated runs and external reproduction are collected before stronger claims are made.
+```text
+MIRA TEXT CORE
+  -> MIRA CORE voice/session convergence
+  -> independent check
+  -> browser/runtime 3-path verification
+  -> 10 consecutive full-path PASS runs
+  -> ONE VERIFIED JOURNEY
+  -> external cohort evidence
+```
 
-Voice/TTS reliability, live public-transport coverage, repeated voice-to-verified-action behavior, quantified time saved and independent third-party reproduction remain **IN VALIDATION / NOT YET PROVEN** until evidence supports them.
+The immediate credibility gate is **MIRA CORE VERIFIED**, not new module count. Until that gate passes, the project does not claim completed wake-word reliability, voice reliability, beta readiness, production readiness, quantified Time Returned or product-market fit.
 
 ## Naming
 
