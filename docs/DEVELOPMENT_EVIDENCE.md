@@ -1,7 +1,7 @@
 # Korako Yolawani — Development Evidence Ledger
 
-**Status date:** 2026-09-13
-**Stage:** active prototype / personal daily-use validation
+**Status date:** 2026-09-21
+**Stage:** active prototype / MIRA FIRST core reliability validation
 
 This ledger separates what can be reproduced publicly from what has been verified only inside the private development core.
 
@@ -69,6 +69,9 @@ So the repo proves the instrumentation works, but **does not yet prove quantifie
 
 | Milestone | Evidence class | Current truth |
 | --- | --- | --- |
+| KVSP v0.1 · 2026-09-18 | INTERNALLY VERIFIED / MERGED | Machine-readable verified-work spine merged to the private canonical runtime; public repo does not claim the private implementation is independently reproduced. |
+| Mira Text Core · 2026-09-20 | INTERNALLY VERIFIED / MERGED | Reconciled text-first Mira path merged to private canonical `main`; dedicated voice/session/wake redesign was explicitly out of scope. |
+| MIRA CORE 3-path trace · 2026-09-20 | INTERNALLY VERIFIED / IN VALIDATION | Space and orb were traced to the same main conversation controller; the baseline did not contain a true wake-word entry. A bounded reconciliation candidate exists, but exact-head Checker review, browser/runtime 3-path proof, Stop Mira verification and 10 consecutive PASS runs remain open. |
 | Personal Alpha | INTERNALLY VERIFIED | Integrated into the private canonical development core |
 | Hybrid Mira Orb | INTERNALLY VERIFIED / IN VALIDATION | Integrated; natural uninterrupted conversation is still being refined |
 | Local/free-first voice routing | INTERNALLY VERIFIED / IN VALIDATION | Integrated with paid/cloud escalation guarded rather than used as the default path |
@@ -104,13 +107,16 @@ It also does not yet prove a quantified reduction in human coordination time. Th
 
 - [x] minimal public Golden runtime connecting plan → authority → bounded execution → evidence → verification → persistent continuation;
 - [x] public recovery/failure scenario reproduced end to end;
-- [x] internally verified local real-use smoke;
-- [x] internally verified real Mira/Korako browser flow from goal to useful verified read-only result;
-- [x] live Korako-side No-Postman instrumentation with zero observed relay in the bounded flow;
-- [x] ONE-MIRA canonical browser surface internally verified with zero automated test failures;
-- [ ] physical-device Mira acceptance and repeated voice → useful action → verified result evidence;
+- [x] KVSP v0.1 merged in the private canonical runtime;
+- [x] Mira Text Core reconciled and merged to private canonical `main`;
+- [x] Mira voice 3-path trace completed and blocker class reduced to a concrete wake/interruption/runtime-verification gate;
+- [ ] exact current MIRA CORE candidate independently checked;
+- [ ] browser/runtime Space → Orb → Hey Mira convergence verified;
+- [ ] Stop Mira interruption verified against the same authoritative controller;
+- [ ] 10 consecutive full-path runtime PASS runs;
+- [ ] ONE VERIFIED JOURNEY completed end to end;
 - [x] independent reproduction protocol prepared;
-- [ ] measured human manual-vs-Korako baseline with defensible time-saved data;
+- [ ] measured human manual-vs-Korako baseline with defensible Time Returned data;
 - [ ] independent third-party reproduction/review returned;
 - [ ] pilot evidence from a real external workflow/user;
 - [ ] production-readiness/security claims only after evidence supports them.
