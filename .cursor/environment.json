@@ -1,0 +1,4 @@
+{
+  "name": "korako-yolawani",
+  "install": "npm test"
+}
