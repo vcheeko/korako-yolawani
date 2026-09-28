@@ -1,0 +1,58 @@
+name: Sponsorship / partnership inquiry
+description: Support Korako Yolawani, propose a pilot, or offer infrastructure/review.
+title: "[PARTNER] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your interest in Korako Yolawani.
+
+        This is a **public GitHub issue**. Do not post credentials, private customer data, sensitive personal information, unpublished security details, or confidential commercial material.
+
+  - type: dropdown
+    id: support_type
+    attributes:
+      label: Type of support
+      options:
+        - Financial sponsorship
+        - Pilot partnership
+        - Infrastructure / compute / credits
+        - Test hardware
+        - Security / reliability / technical review
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Name or organization
+      description: Public name, organization, or GitHub handle.
+      placeholder: Example Corp / @handle
+    validations:
+      required: true
+
+  - type: input
+    id: public_link
+    attributes:
+      label: Public link
+      description: Optional website or GitHub profile.
+      placeholder: https://...
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to support or test?
+      description: Keep this high-level and non-confidential.
+      placeholder: Describe the sponsorship, pilot workflow, infrastructure contribution, or review you have in mind.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Public issue boundary
+      options:
+        - label: I have not included credentials, private customer data, sensitive personal information, or confidential security details.
+          required: true
