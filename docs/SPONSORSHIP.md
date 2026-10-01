@@ -50,3 +50,18 @@ Keep tiers simple and contribution-oriented. Possible names:
 - **Founding Supporter**
 
 Benefits should be community benefits that can actually be delivered, such as supporter recognition, public project updates or community sessions. Avoid investment-like language, guaranteed outcomes or access that would weaken the public/private boundary.
+
+
+## Proposed initial tiers
+
+GitHub Sponsors uses USD-denominated tiers. Keep the first version intentionally simple:
+
+| Tier | Suggested amount | Public benefit |
+| --- | ---: | --- |
+| **Supporter** | **$5/month** | Support continued public evidence, documentation and community work; GitHub sponsor recognition where the sponsor chooses to be public. |
+| **Builder** | **$25/month** | Everything above, plus access to a concise monthly public build/supporter update. |
+| **Founding Supporter** | **$100/month** | Everything above, plus invitation to a periodic public/community roadmap session while the project is in its founding phase. |
+
+These are sponsorship benefits, not governance rights. No tier grants equity, ownership, guaranteed feature priority, private-core access, investment returns or authority over safety/security decisions.
+
+Start with monthly tiers only. Add one-time tiers later only if there is a clear supporter use case and the operational burden remains low.
