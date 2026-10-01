@@ -257,4 +257,4 @@ If you are evaluating the project, the most useful feedback is specific and fals
 
 ---
 
-**Evidence before scale. Human authority before consequential execution.**
+**Evidence before scale. Human authority before consequential execution.**\n\n> **Current public status · 2026-10-01:** [Status](docs/CURRENT_STATUS.md) · [Devil Mode](docs/DEVIL_MODE.md)\n> M1 — Mira Core remains in validation; production readiness is not claimed.\n
