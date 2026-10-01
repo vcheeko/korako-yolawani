@@ -260,11 +260,12 @@ If you are evaluating the project, the most useful feedback is specific and fals
 
 Korako's public community layer is designed for **inspectable claims, useful criticism and bounded collaboration** while the canonical runtime remains private.
 
-When GitHub Discussions is enabled, use it for ideas, Q&A, Human Journey proposals, Capability Radar candidates, public architecture RFCs, benchmarks and community demonstrations. Use Issues for bounded actionable work after scope and evidence requirements are clear.
+GitHub Discussions is enabled. Use it for ideas, Q&A, Human Journey proposals, Capability Radar candidates, public architecture RFCs, benchmarks and community demonstrations. Use Issues for bounded actionable work after scope and evidence requirements are clear.
 
 - [`docs/OPEN_ECOSYSTEM.md`](docs/OPEN_ECOSYSTEM.md) — community structure and public/private collaboration boundary.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — contribution expectations and evidence standard.
 - [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) — community behavior and moderation rules.
+- [`docs/CONTRIBUTION_IP_POLICY.md`](docs/CONTRIBUTION_IP_POLICY.md) — interim contribution and IP boundary.
 - [`docs/SPONSORSHIP.md`](docs/SPONSORSHIP.md) — sponsorship boundary and activation gate.
 - [`SECURITY.md`](SECURITY.md) — private reporting path for sensitive security information.
 
