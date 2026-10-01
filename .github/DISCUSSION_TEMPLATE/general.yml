@@ -1,0 +1,23 @@
+title: "[General] "
+body:
+  - type: textarea
+    id: topic
+    attributes:
+      label: Topic
+      description: What would you like to discuss about Korako's public project or evidence surface?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and evidence
+      description: Add relevant context, public sources, reproduction steps or assumptions.
+    validations:
+      required: false
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Public-boundary check
+      options:
+        - label: I have not included credentials, personal data, private-core implementation details or sensitive vulnerability information.
+          required: true

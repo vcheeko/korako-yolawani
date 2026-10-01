@@ -255,6 +255,22 @@ Especially useful now:
 
 If you are evaluating the project, the most useful feedback is specific and falsifiable: **what claim is unclear, what evidence is missing, what failure mode is unhandled, or what would you need to reproduce independently?**
 
+
+## Community & support
+
+Korako's public community layer is designed for **inspectable claims, useful criticism and bounded collaboration** while the canonical runtime remains private.
+
+GitHub Discussions is enabled. Use it for ideas, Q&A, Human Journey proposals, Capability Radar candidates, public architecture RFCs, benchmarks and community demonstrations. Use Issues for bounded actionable work after scope and evidence requirements are clear.
+
+- [`docs/OPEN_ECOSYSTEM.md`](docs/OPEN_ECOSYSTEM.md) — community structure and public/private collaboration boundary.
+- [`CONTRIBUTING.md`](CONTRIBUTING.md) — contribution expectations and evidence standard.
+- [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) — community behavior and moderation rules.
+- [`docs/CONTRIBUTION_IP_POLICY.md`](docs/CONTRIBUTION_IP_POLICY.md) — interim contribution and IP boundary.
+- [`docs/SPONSORSHIP.md`](docs/SPONSORSHIP.md) — sponsorship boundary and activation gate.
+- [`SECURITY.md`](SECURITY.md) — private reporting path for sensitive security information.
+
+**GitHub Sponsors is support for public project work, not equity or an investment contract.** Repository funding activation remains gated until the Sponsors profile and payout/tax setup are confirmed live.
+
 ---
 
 **Evidence before scale. Human authority before consequential execution.**

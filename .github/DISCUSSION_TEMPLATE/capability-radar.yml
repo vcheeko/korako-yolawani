@@ -1,0 +1,30 @@
+title: "[Capability Radar] "
+body:
+  - type: input
+    id: candidate
+    attributes:
+      label: Candidate capability
+      description: Name the tool, model, agent, protocol, library or integration.
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Korako use case
+      description: Which capability or Journey could it improve?
+    validations:
+      required: true
+  - type: textarea
+    id: benchmark
+    attributes:
+      label: Proposed benchmark
+      description: How should Korako compare it against the current baseline?
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Cost, privacy, licensing and operational constraints
+      description: Include known trade-offs and source links where useful.
+    validations:
+      required: false
