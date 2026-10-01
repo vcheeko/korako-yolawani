@@ -65,3 +65,16 @@ GitHub Sponsors uses USD-denominated tiers. Keep the first version intentionally
 These are sponsorship benefits, not governance rights. No tier grants equity, ownership, guaranteed feature priority, private-core access, investment returns or authority over safety/security decisions.
 
 Start with monthly tiers only. Add one-time tiers later only if there is a clear supporter use case and the operational burden remains low.
+
+
+## Readiness snapshot
+
+Checked during M2 activation:
+
+- GitHub Discussions is enabled for the public repository.
+- The `vcheeko` GitHub account has 2FA enabled.
+- Slovenia is listed by GitHub as a supported Sponsors region.
+- The account currently reports `hasSponsorsListing: false`; the public `/sponsors/vcheeko` path redirects to the normal user profile.
+- Sponsor onboarding therefore remains a **human/account-holder gate** for profile details, identity, payout/bank information, tax forms and GitHub approval.
+
+Do not add `.github/FUNDING.yml` until `hasSponsorsListing` becomes true and the public Sponsors profile resolves normally.
