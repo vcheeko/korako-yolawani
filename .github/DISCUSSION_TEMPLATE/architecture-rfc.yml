@@ -1,0 +1,30 @@
+title: "[RFC] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Architecture problem
+      description: What public architecture problem are you trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the smallest public-level architecture change needed.
+    validations:
+      required: true
+  - type: textarea
+    id: invariants
+    attributes:
+      label: Invariants to preserve
+      description: How does the proposal preserve human authority, provenance, verification, recovery and the public/private boundary?
+    validations:
+      required: true
+  - type: textarea
+    id: falsification
+    attributes:
+      label: How could this proposal be falsified?
+      description: Name tests, failure cases or evidence that would show the proposal is wrong or weaker.
+    validations:
+      required: true
