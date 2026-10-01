@@ -48,3 +48,8 @@ Do not submit:
 Specific criticism is welcome. The most valuable review identifies a falsifiable weakness: a missing failure mode, an unverifiable claim, an unsafe authority boundary, an evidence gap or a reproducibility problem.
 
 The objective is not to make the project look finished. The objective is to make its current state **clear, testable and difficult to misrepresent**.
+
+
+## Contribution and IP boundary
+
+This repository currently has no open-source `LICENSE` file. Before substantial external code or reusable product IP is accepted, follow the interim policy in [`docs/CONTRIBUTION_IP_POLICY.md`](docs/CONTRIBUTION_IP_POLICY.md). For now, prefer review, issues, documentation, test cases and bounded public-proof improvements over substantial third-party implementation.
