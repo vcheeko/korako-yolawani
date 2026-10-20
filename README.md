@@ -1,6 +1,6 @@
 # KORAKO YOLAWANI
 
-> **A human-directed operating layer for reliable AI-assisted work.**
+> **Your AI companion for important work — one step at a time, with you in control.**
 
 [![Public evidence](https://github.com/vcheeko/korako-yolawani/actions/workflows/public-evidence.yml/badge.svg)](https://github.com/vcheeko/korako-yolawani/actions/workflows/public-evidence.yml)
 
@@ -13,9 +13,15 @@
 
 ## 30-second overview
 
-Korako Yolawani is designed for work that becomes difficult when it spans multiple AI models, tools, devices, sessions and human decisions.
+**Korako Yolawani is a human-first AI companion in development.** Its purpose is to make important work easier: help people understand the next step, coordinate their existing tools, remain in control of consequential actions and distinguish planned work from work that was actually completed.
 
-The goal is not autonomy at any cost. The goal is **reliable continuation while the human retains meaningful authority**.
+**Initial market hypothesis:** independent consultants who lose time managing client emails, follow-ups and commitments. A possible first workflow is reviewing a client request, preparing the next step, asking for approval before an external action, and keeping an evidence-based status. This market, workflow and willingness to pay are **not yet validated with external customers**.
+
+**Additional exploratory journey — job seekers:** relevant job discovery, truthful master CV and role-specific tailoring, application review, interview preparation and follow-up tracking. This is a **proposed product direction**, not a claim that a complete public service exists or that Korako can guarantee employment.
+
+**Stage:** prototype and reliability validation. The public trust demonstrations do not establish production readiness, live integrations or measurable customer outcomes.
+
+Korako's engineering approach is intended to coordinate multiple tools and sessions without making the person the integration layer.
 
 ```text
 GOAL
