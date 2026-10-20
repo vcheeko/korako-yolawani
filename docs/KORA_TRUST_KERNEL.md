@@ -1,4 +1,4 @@
-# KORA Trust Kernel — Public Contract v0.1
+> **Current status (2026-10-01):** See [CURRENT_STATUS.md](CURRENT_STATUS.md) and [DEVIL_MODE.md](DEVIL_MODE.md). Evidence labels remain authoritative; this page must not be read as a production-readiness claim.\n\n# KORA Trust Kernel — Public Contract v0.1
 
 **Status:** public contract harness / not a production security claim
 **Effective:** 2026-09-12

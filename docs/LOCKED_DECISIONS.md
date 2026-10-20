@@ -1,4 +1,4 @@
-# Korako Yolawani — Public Decision Principles
+> **Current status (2026-10-01):** See [CURRENT_STATUS.md](CURRENT_STATUS.md) and [DEVIL_MODE.md](DEVIL_MODE.md). Evidence labels remain authoritative; this page must not be read as a production-readiness claim.\n\n# Korako Yolawani — Public Decision Principles
 
 **Status date:** 2026-09-21  
 **Public disclosure class:** high-level summary only

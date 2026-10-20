@@ -1,4 +1,4 @@
-# Korako Yolawani — Development Evidence Ledger
+> **Current status (2026-10-01):** See [CURRENT_STATUS.md](CURRENT_STATUS.md) and [DEVIL_MODE.md](DEVIL_MODE.md). Evidence labels remain authoritative; this page must not be read as a production-readiness claim.\n\n# Korako Yolawani — Development Evidence Ledger
 
 **Status date:** 2026-09-21
 **Stage:** active prototype / MIRA FIRST core reliability validation

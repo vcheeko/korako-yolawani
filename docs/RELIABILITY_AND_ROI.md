@@ -1,4 +1,4 @@
-# Korako Reliability and No-Postman ROI Protocol
+> **Current status (2026-10-01):** See [CURRENT_STATUS.md](CURRENT_STATUS.md) and [DEVIL_MODE.md](DEVIL_MODE.md). Evidence labels remain authoritative; this page must not be read as a production-readiness claim.\n\n# Korako Reliability and No-Postman ROI Protocol
 
 **Status:** executable reliability proof + prepared human measurement protocol
 **Effective:** 2026-09-12

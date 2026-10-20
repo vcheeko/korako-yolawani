@@ -1,4 +1,4 @@
-# Korako Yolawani — Independent Reproduction Protocol
+> **Current status (2026-10-01):** See [CURRENT_STATUS.md](CURRENT_STATUS.md) and [DEVIL_MODE.md](DEVIL_MODE.md). Evidence labels remain authoritative; this page must not be read as a production-readiness claim.\n\n# Korako Yolawani — Independent Reproduction Protocol
 
 This protocol is for an external reviewer who wants to test the public proof surface without access to the private canonical runtime.
 
