@@ -1,0 +1,27 @@
+title: "[Announcement] "
+body:
+  - type: textarea
+    id: update
+    attributes:
+      label: Update
+      description: State the milestone or update and the evidence level that supports it.
+    validations:
+      required: true
+  - type: dropdown
+    id: evidence_level
+    attributes:
+      label: Evidence level
+      options:
+        - Prepared
+        - Executed
+        - Verified
+        - Publicly reproduced
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Link to the public proof, PR, workflow, release or reproduction instructions.
+    validations:
+      required: true

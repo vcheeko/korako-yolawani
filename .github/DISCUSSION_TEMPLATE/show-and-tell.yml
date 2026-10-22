@@ -1,0 +1,23 @@
+title: "[Show & Tell] "
+body:
+  - type: textarea
+    id: build
+    attributes:
+      label: What did you build or test?
+      description: Describe the result and how it relates to Korako's public surface.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or demo
+      description: Add reproducible steps, screenshots or public links where appropriate.
+    validations:
+      required: false
+  - type: textarea
+    id: learning
+    attributes:
+      label: What did you learn?
+      description: Include limitations, failures or changes you would make next.
+    validations:
+      required: true
