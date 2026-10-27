@@ -1,6 +1,6 @@
 # KORAKO YOLAWANI
 
-> **Human first. AI by your side.**
+> **A More Human Tomorrow.**
 
 [![Public evidence](https://github.com/vcheeko/korako-yolawani/actions/workflows/public-evidence.yml/badge.svg)](https://github.com/vcheeko/korako-yolawani/actions/workflows/public-evidence.yml)
 
