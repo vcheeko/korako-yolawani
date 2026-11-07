@@ -13,15 +13,22 @@
 
 ## 30-second overview
 
-**Korako Yolawani is a human-first AI companion in development.** Its purpose is to make important work easier: help people understand the next step, coordinate their existing tools, remain in control of consequential actions and distinguish planned work from work that was actually completed.
+**Korako Yolawani is a personal AI companion in development that helps you work toward bigger goals one step at a time.**
+
+Tell Mira what you want to accomplish. Korako is designed to coordinate the tools and agents you authorize in the background, so you can see where you are, what’s underway, what’s done, and where your decision is needed.
+
+We call this **No Postman**. Korako is designed to carry context between tools so you can focus on the decisions that need you.
+
+The [public demo](public-golden/v0.1/) shows a bounded task with approval, evidence, verification, and recovery. We’re working toward a reliable Mira session and one independently verified user journey.
+
+<details>
+<summary><strong>Use cases in exploration</strong></summary>
 
 **One product, two connected areas:** Korako People supports job search, applications and interview preparation; Korako Business supports customer conversations, meetings and follow-through. These are product directions in development, not two complete services.
 
 **First business hypothesis:** small US residential HVAC companies, helping office teams understand which customer enquiries remain unresolved, what should happen next and who is responsible.
 
-**Immediate priority:** a working, independently verified core and one complete workflow before inviting others to try it. Customer demand and business results still need to be tested.
-
-**Stage:** prototype and reliability validation. The public trust demonstrations do not establish production readiness, live integrations or measurable customer outcomes.
+</details>
 
 <details>
 <summary><strong>Technical evidence, architecture and development history</strong></summary>
