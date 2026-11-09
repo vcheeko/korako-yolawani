@@ -1,0 +1,34 @@
+title: "[Benchmark] "
+body:
+  - type: textarea
+    id: claim
+    attributes:
+      label: Claim under test
+      description: State the claim without upgrading it beyond available evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Reproduction method
+      description: Provide enough detail for an independent reviewer to repeat the test.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Results
+      description: Include raw observations, failures and limitations.
+    validations:
+      required: true
+  - type: dropdown
+    id: evidence_level
+    attributes:
+      label: Evidence level
+      options:
+        - Prepared
+        - Executed
+        - Verified
+        - Publicly reproduced
+    validations:
+      required: true

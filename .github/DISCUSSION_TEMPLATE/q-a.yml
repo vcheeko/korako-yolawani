@@ -1,0 +1,23 @@
+title: "[Q&A] "
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What would you like to understand about Korako's public surface?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What have you already read, tested or tried?
+    validations:
+      required: false
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Public-boundary check
+      options:
+        - label: This question does not disclose private or security-sensitive information.
+          required: true

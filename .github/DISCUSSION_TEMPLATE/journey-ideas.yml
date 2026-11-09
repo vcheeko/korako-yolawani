@@ -1,0 +1,30 @@
+title: "[Journey] "
+body:
+  - type: textarea
+    id: human_goal
+    attributes:
+      label: Human goal
+      description: What real outcome is the person trying to achieve?
+    validations:
+      required: true
+  - type: textarea
+    id: journey
+    attributes:
+      label: Journey
+      description: Describe the important steps, dependencies and human decisions.
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: Success contract
+      description: What observable evidence would mean the Journey is done correctly?
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and Human Gates
+      description: Which actions should require explicit human approval or independent verification?
+    validations:
+      required: true
